@@ -103,7 +103,8 @@ export default function Index() {
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">About Us</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            We are a creative studio focused on building fast, accessible, and beautiful web experiences.
+            We are a creative studio focused on building fast, accessible, and
+            beautiful web experiences.
           </p>
         </div>
       </section>
@@ -114,15 +115,21 @@ export default function Index() {
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
               <h3 className="text-xl font-semibold">Design</h3>
-              <p className="mt-2 text-muted-foreground">Branding, UI/UX, and prototypes.</p>
+              <p className="mt-2 text-muted-foreground">
+                Branding, UI/UX, and prototypes.
+              </p>
             </li>
             <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
               <h3 className="text-xl font-semibold">Development</h3>
-              <p className="mt-2 text-muted-foreground">Web apps, sites, and integrations.</p>
+              <p className="mt-2 text-muted-foreground">
+                Web apps, sites, and integrations.
+              </p>
             </li>
             <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
               <h3 className="text-xl font-semibold">Performance</h3>
-              <p className="mt-2 text-muted-foreground">Optimization and SEO best practices.</p>
+              <p className="mt-2 text-muted-foreground">
+                Optimization and SEO best practices.
+              </p>
             </li>
           </ul>
         </div>
@@ -132,7 +139,8 @@ export default function Index() {
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Contact</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Ready to start? Email us at hello@example.com and we���ll be in touch.
+            Ready to start? Email us at hello@example.com and we���ll be in
+            touch.
           </p>
         </div>
       </section>

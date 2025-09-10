@@ -55,14 +55,30 @@ export default function Header() {
           aria-label="Toggle Menu"
           onClick={() => setOpen((v) => !v)}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="transition">
-            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="transition"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
           </svg>
         </button>
       </div>
 
       {/* Mobile menu */}
-      <div className={cn("md:hidden border-t bg-white/5", open ? "block" : "hidden")}>
+      <div
+        className={cn(
+          "md:hidden border-t bg-white/5",
+          open ? "block" : "hidden",
+        )}
+      >
         <div className="container py-3 flex flex-col">
           {navItems.map((item) => (
             <a
@@ -74,7 +90,10 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a href="#contact" className="mt-2 rounded-md bg-primary px-4 py-2 text-center text-primary-foreground">
+          <a
+            href="#contact"
+            className="mt-2 rounded-md bg-primary px-4 py-2 text-center text-primary-foreground"
+          >
             Schedule a demo
           </a>
         </div>
