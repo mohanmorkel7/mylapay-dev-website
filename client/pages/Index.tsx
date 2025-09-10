@@ -240,9 +240,13 @@ export default function Index() {
 
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
                   <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
-                    A Unified Global Payment Processing Solution
-                    <br className="hidden md:inline" />
-                    for Acquirers — Banks & Payment Aggregators
+                    A Unified Global
+                    <br />
+                    Payment Processing Solution
+                    <br />
+                    for Acquirers - Banks and
+                    <br />
+                    Payment Aggregators
                   </h2>
 
                   <p className="mt-4 text-center text-sm md:text-base text-slate-900 dark:text-white">
