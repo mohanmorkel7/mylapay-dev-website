@@ -77,12 +77,6 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="mt-2 rounded-md bg-primary px-4 py-2 text-center text-primary-foreground"
-          >
-            Schedule a demo
-          </a>
         </div>
       </div>
     </header>
