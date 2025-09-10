@@ -61,7 +61,7 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden border-t bg-white/5",
+          "md:hidden border-t bg-white/10",
           open ? "block" : "hidden",
         )}
       >
