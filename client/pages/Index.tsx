@@ -245,39 +245,39 @@ export default function Index() {
                     for Acquirers — Banks & Payment Aggregators
                   </h2>
 
-                  <p className="mt-4 text-center text-sm md:text-base text-muted-foreground">
+                  <p className="mt-4 text-center text-sm md:text-base text-slate-900 dark:text-white">
                     Supports POS and E-com payments for
                   </p>
 
                   <div className="mt-4 flex items-center gap-8">
-                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                    <div className="flex items-center gap-2 text-sm md:text-base">
                       <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
                         <svg width="16" height="12" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                           <rect x="0.5" y="2" width="19" height="10" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
                           <rect x="2" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
                         </svg>
                       </span>
-                      <span className="font-medium">Cards</span>
+                      <span className="font-medium text-slate-900 dark:text-white">Cards</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                    <div className="flex items-center gap-2 text-sm md:text-base">
                       <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                           <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                           <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
-                      <span className="font-medium">UPI</span>
+                      <span className="font-medium text-slate-900 dark:text-white">UPI</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                    <div className="flex items-center gap-2 text-sm md:text-base">
                       <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                           <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.4" />
                           <path d="M3 12h18" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
                         </svg>
                       </span>
-                      <span className="font-medium">Net-Banking</span>
+                      <span className="font-medium text-slate-900 dark:text-white">Net-Banking</span>
                     </div>
                   </div>
                 </div>
