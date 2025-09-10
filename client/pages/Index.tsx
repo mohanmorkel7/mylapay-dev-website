@@ -111,7 +111,7 @@ export default function Index() {
       {/* Content sections for anchors */}
       <section id="about" className="bg-background/70 backdrop-blur-sm">
         <div className="container mx-auto py-20 md:py-28">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-5xl mx-auto">
             <div className="flex flex-col items-start justify-center text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
                 The Next-Gen
