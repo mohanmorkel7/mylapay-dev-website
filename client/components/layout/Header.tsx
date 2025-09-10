@@ -14,7 +14,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur border-b border-white/20" style={{ backgroundColor: "rgba(255, 255, 255, 0.7)" }}>
+    <header
+      className="fixed inset-x-0 top-0 z-50 backdrop-blur border-b border-white/20"
+      style={{ backgroundColor: "rgba(255, 255, 255, 0.7)" }}
+    >
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
@@ -60,11 +63,8 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
-        className={cn(
-          "md:hidden border-t",
-          open ? "block" : "hidden",
-        )}
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.7)" }}
+        className={cn("md:hidden border-t", open ? "block" : "hidden")}
       >
         <div className="container py-3 flex flex-col">
           {navItems.map((item) => (
