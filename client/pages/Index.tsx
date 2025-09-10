@@ -227,16 +227,31 @@ export default function Index() {
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
             <div className="relative">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
-                alt="World map"
-                className="w-full opacity-80 dark:opacity-60"
-                loading="lazy"
-              />
-              <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                <h2 className="px-6 text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm">
-                  A Unified Global Payment Processing Solution for Acquirers
-                </h2>
+              <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
+                <div
+                  aria-hidden
+                  className="w-full h-full max-w-4xl"
+                  style={{
+                    color: "hsl(var(--primary))",
+                    backgroundImage: "radial-gradient(currentColor 1px, transparent 1px)",
+                    backgroundSize: "12px 12px",
+                    WebkitMaskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
+                    WebkitMaskSize: "contain",
+                    WebkitMaskPosition: "center",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
+                    maskSize: "contain",
+                    maskPosition: "center",
+                    maskRepeat: "no-repeat",
+                    opacity: 0.95,
+                  }}
+                />
+
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6">
+                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm">
+                    A Unified Global Payment Processing Solution for Acquirers
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
