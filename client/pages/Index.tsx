@@ -72,12 +72,6 @@ export default function Index() {
             >
               Integrate with us
             </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-md hover:opacity-95 transition"
-            >
-              Schedule a demo
-            </a>
           </div>
         </div>
 
