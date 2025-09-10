@@ -214,32 +214,32 @@ export default function Index() {
       </section>
 
       {/* Global map section */}
-      <section id="global-map" className="relative bg-background py-24 md:py-32 overflow-hidden">
+      <section id="global-map" className="relative bg-background py-8 md:py-12 overflow-hidden">
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
             <div className="relative">
-              <div className="relative w-full h-[220px] md:h-[300px] lg:h-[360px] flex items-center justify-center">
+              <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
                 <div
                   aria-hidden
-                  className="w-full h-full max-w-4xl"
+                  className="w-full h-full max-w-6xl"
                   style={{
                     color: "#2caee4",
                     backgroundImage: "radial-gradient(currentColor 1.5px, transparent 1.5px)",
                     backgroundSize: "6px 6px",
                     WebkitMaskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    WebkitMaskSize: "90% 90%",
+                    WebkitMaskSize: "100% 100%",
                     WebkitMaskPosition: "center",
                     WebkitMaskRepeat: "no-repeat",
                     maskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    maskSize: "90% 90%",
+                    maskSize: "100% 100%",
                     maskPosition: "center",
                     maskRepeat: "no-repeat",
-                    opacity: 0.95,
+                    opacity: 0.98,
                   }}
                 />
 
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6">
-                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-4">
+                  <h2 className="max-w-2xl text-center text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-snug">
                     A Unified Global<br />
                     Payment Processing Solution<br />
                     for Acquirers
