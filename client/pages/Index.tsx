@@ -213,6 +213,36 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Global map section */}
+      <section id="global-map" className="relative bg-background py-24 md:py-32 overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(hsl(var(--foreground) / 0.12) 1px, transparent 1px)",
+            backgroundSize: "16px 16px",
+          }}
+        />
+        <div className="container relative mx-auto">
+          <div className="mx-auto max-w-6xl">
+            <div className="relative">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+                alt="World map"
+                className="w-full opacity-80 dark:opacity-60"
+                loading="lazy"
+              />
+              <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+                <h2 className="px-6 text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm">
+                  A Unified Global Payment Processing Solution for Acquirers
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="services" className="bg-background">
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
