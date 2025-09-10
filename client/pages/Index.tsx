@@ -110,10 +110,10 @@ export default function Index() {
 
       {/* Content sections for anchors */}
       <section id="about" className="bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto py-20 md:py-28">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-5xl mx-auto">
-            <div className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 lg:pl-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+        <div className="container mx-auto py-24 md:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="pl-4 md:pl-12 lg:pl-20">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
                 The Next-Gen
                 <br />
                 Payment Company
@@ -122,7 +122,7 @@ export default function Index() {
                 A Smart payment infrastructure
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3 justify-center">
+              <div className="mt-6 flex items-start gap-3">
                 <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">
                   Designed in India
                 </span>
@@ -132,10 +132,10 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-6">
-              <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
-                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
+            <div className="flex items-center justify-center">
+              <div className="w-full max-w-md">
+                <div className="flex items-start gap-4 p-6 rounded-2xl bg-white shadow-xl border border-slate-100">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sky-600 text-white flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M3 7v10a2 2 0 0 0 2 2h14"
@@ -161,8 +161,8 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-500 text-white">
+                <div className="flex items-start gap-4 p-6 rounded-2xl bg-white shadow-xl border border-slate-100">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sky-500 text-white flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M12 3v18"
@@ -188,8 +188,8 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-400 text-white">
+                <div className="flex items-start gap-4 p-6 rounded-2xl bg-white shadow-xl border border-slate-100">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sky-400 text-white flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M3 12h6l3-9 3 18 3-9h6"
