@@ -36,7 +36,6 @@ export default function Header() {
           ))}
         </nav>
 
-
         <button
           className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:text-white hover:bg-white/10 transition"
           aria-label="Toggle Menu"
