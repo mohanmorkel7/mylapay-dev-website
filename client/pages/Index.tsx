@@ -118,7 +118,7 @@ export default function Index() {
                 <br />
                 Payment Company
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
+              <p className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
                 A Smart payment infrastructure
               </p>
 
