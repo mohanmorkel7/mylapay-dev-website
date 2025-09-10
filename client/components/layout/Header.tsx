@@ -14,7 +14,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/40 backdrop-blur border-b border-white/20 shadow-sm">
+    <header className="fixed inset-x-0 top-0 z-50 bg-black/40 backdrop-blur border-b border-black/10">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <span className="inline-flex items-center justify-center rounded-md bg-white/90 p-1 shadow-sm">
