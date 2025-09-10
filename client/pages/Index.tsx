@@ -5,10 +5,20 @@ export default function Index() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [needsInteraction, setNeedsInteraction] = useState(false);
 
+  // Dummy video list to cycle through as background (public sample clips)
+  const videoList = [
+    "https://cdn.coverr.co/videos/coverr-corporate-office-1598069514309?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImNvdmVyci1jb3Jwb3JhdGUtb2ZmaWNlLTE1OTgwNjk1MTQzMDkiLCJtZWRpYSI6InZpZGVvIiwiaWF0IjoxNjg3NjU0MTQ0fQ.A0nqKx1Wp2O4v4o4q6kF7c0d8g0YQ6b7wQ1n0gY1Xrw",
+    "https://videos.pexels.com/video-files/3183172/3183172-hd_1920_1080_25fps.mp4",
+    "https://cdn.coverr.co/videos/coverr-team-in-office-1606319778961?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImNvdmVyci10ZWFtLWluLW9mZmljZS0xNjA2MzE5Nzc4OTYxIiwibWVkaWEiOiJ2aWRlbyIsImlhdCI6MTY4NzY1NDE1MX0.k-0QwZg0i5w0Y7Nlq8uA2yK1dYg9iO6l0B4Yh9cJHnI",
+  ];
+  const [currentVideo, setCurrentVideo] = useState(0);
+
+  // Attempt to play whenever the video source changes
   useEffect(() => {
     const tryPlay = async () => {
       try {
         await videoRef.current?.play();
+        setNeedsInteraction(false);
       } catch (err) {
         // Autoplay blocked, show play button
         setNeedsInteraction(true);
@@ -16,6 +26,14 @@ export default function Index() {
     };
 
     tryPlay();
+  }, [currentVideo]);
+
+  // Cycle videos every 12 seconds
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrentVideo((v) => (v + 1) % videoList.length);
+    }, 12000);
+    return () => clearInterval(id);
   }, []);
 
   const handleManualPlay = async () => {
