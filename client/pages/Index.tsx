@@ -110,12 +110,73 @@ export default function Index() {
 
       {/* Content sections for anchors */}
       <section id="about" className="bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto py-24 md:py-32 text-foreground">
-          <h2 className="text-3xl md:text-4xl font-bold">About Us</h2>
-          <p className="mt-4 max-w-2xl text-muted-foreground">
-            We are a creative studio focused on building fast, accessible, and
-            beautiful web experiences.
-          </p>
+        <div className="container mx-auto py-20 md:py-28">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+                The Next-Gen
+                <br />
+                Payment Company
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-xl">
+                A Smart payment infrastructure
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">Designed in India</span>
+                <span className="inline-block bg-slate-800 text-white px-3 py-1 rounded-md text-sm">Delivered Globally</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-start md:items-end gap-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2Fd13840f6cb624a009db0d68f7f82e099?format=webp&width=800"
+                alt="Features"
+                className="w-64 md:w-80 rounded-md shadow-lg"
+              />
+
+              <ul className="space-y-4 mt-2">
+                <li className="flex items-center gap-4">
+                  <div className="p-3 rounded-full bg-sky-500 text-white flex items-center justify-center">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
+                      <path d="M12 1v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <rect x="4" y="7" width="16" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
+                      <path d="M8 11h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900">Secure</div>
+                    <div className="text-sm text-muted-foreground">End-to-end payment security</div>
+                  </div>
+                </li>
+
+                <li className="flex items-center gap-4">
+                  <div className="p-3 rounded-full bg-sky-400 text-white flex items-center justify-center">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
+                      <path d="M3 12h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                      <path d="M12 3v18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900">Speed</div>
+                    <div className="text-sm text-muted-foreground">Fast transaction processing</div>
+                  </div>
+                </li>
+
+                <li className="flex items-center gap-4">
+                  <div className="p-3 rounded-full bg-sky-300 text-white flex items-center justify-center">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
+                      <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900">Scalable</div>
+                    <div className="text-sm text-muted-foreground">Grow without limits</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
