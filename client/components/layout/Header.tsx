@@ -14,7 +14,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-black/40 backdrop-blur border-b border-black/10">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white/40 backdrop-blur border-b border-white/20">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
@@ -29,7 +29,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-white/90 hover:text-white transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
+              className="text-sm font-medium text-slate-800/90 hover:text-slate-900 transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-slate-900 after:transition-all hover:after:w-full"
             >
               {item.label}
             </a>
@@ -37,7 +37,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:text-white hover:bg-white/10 transition"
+          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-800/90 hover:text-slate-900 hover:bg-white/10 transition"
           aria-label="Toggle Menu"
           onClick={() => setOpen((v) => !v)}
         >
@@ -61,7 +61,7 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden border-t bg-white/10",
+          "md:hidden border-t bg-white/40",
           open ? "block" : "hidden",
         )}
       >
@@ -71,7 +71,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="py-2 text-base text-white/90 hover:text-white transition-colors"
+              className="py-2 text-base text-slate-800/90 hover:text-slate-900 transition-colors"
             >
               {item.label}
             </a>
