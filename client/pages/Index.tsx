@@ -221,17 +221,17 @@ export default function Index() {
               <div className="relative w-full h-[220px] md:h-[300px] lg:h-[360px] flex items-center justify-center">
                 <div
                   aria-hidden
-                  className="w-full h-full max-w-2xl"
+                  className="w-full h-full max-w-4xl"
                   style={{
                     color: "#2caee4",
                     backgroundImage: "radial-gradient(currentColor 1.5px, transparent 1.5px)",
-                    backgroundSize: "8px 8px",
+                    backgroundSize: "6px 6px",
                     WebkitMaskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    WebkitMaskSize: "contain",
+                    WebkitMaskSize: "90% 90%",
                     WebkitMaskPosition: "center",
                     WebkitMaskRepeat: "no-repeat",
                     maskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    maskSize: "contain",
+                    maskSize: "90% 90%",
                     maskPosition: "center",
                     maskRepeat: "no-repeat",
                     opacity: 0.95,
@@ -239,8 +239,10 @@ export default function Index() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6">
-                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm">
-                    A Unified Global Payment Processing Solution for Acquirers
+                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                    A Unified Global<br />
+                    Payment Processing Solution<br />
+                    for Acquirers
                   </h2>
                 </div>
               </div>
