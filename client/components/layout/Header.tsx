@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Our Capabilities", href: "/#capabilities" },
+  { label: "Our Products", href: "/#products" },
+  { label: "Developer", href: "/#developer" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Resources", href: "/#resources" },
 ];
 
 export default function Header() {
@@ -17,7 +18,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2F5d260831bae44169b92984e1d6e76fd1?format=webp&width=200"
+            src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2F6bb77510276f42a2badf7d1520f1310b?format=webp&width=800"
             alt="Company logo"
             className="h-8 w-auto rounded-sm"
           />
