@@ -54,7 +54,7 @@ export default function Index() {
         <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
           <h1
             id="hero-heading"
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
           >
             Powering the
             <br />
