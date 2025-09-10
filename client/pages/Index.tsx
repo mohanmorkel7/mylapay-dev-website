@@ -49,7 +49,7 @@ export default function Index() {
       {/* Hero content (left aligned, bottom) */}
       <section
         aria-labelledby="hero-heading"
-        className="relative flex min-h-screen flex-col items-start justify-end px-6 pt-16 pb-24 text-left text-white"
+        className="relative flex min-h-screen flex-col items-start justify-end px-6 pt-16 pb-16 md:pb-20 lg:pb-24 text-left text-white"
       >
         <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
           <h1
