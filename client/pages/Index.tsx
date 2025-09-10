@@ -132,7 +132,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-6">
+            <div className="flex flex-col items-start justify-center gap-6 pl-28">
               <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
