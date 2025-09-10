@@ -73,6 +73,22 @@ export default function Index() {
             Contact Us
           </a>
         </div>
+
+        {/* Play overlay if autoplay blocked */}
+        {needsInteraction && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <button
+              onClick={handleManualPlay}
+              className="flex items-center gap-3 rounded-full bg-white/10 px-6 py-3 text-white backdrop-blur hover:bg-white/20 transition"
+              aria-label="Play background video"
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                <path d="M5 3v18l15-9L5 3z" fill="currentColor" />
+              </svg>
+              Play background
+            </button>
+          </div>
+        )}
       </section>
 
       {/* Content sections for anchors */}
