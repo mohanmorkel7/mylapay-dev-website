@@ -214,7 +214,7 @@ export default function Index() {
       </section>
 
       {/* Global map section */}
-      <section id="global-map" className="relative bg-background py-8 md:py-12 overflow-hidden">
+      <section id="global-map" className="relative bg-background py-6 md:py-8 overflow-hidden">
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
             <div className="relative">
@@ -238,12 +238,48 @@ export default function Index() {
                   }}
                 />
 
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-4">
-                  <h2 className="max-w-2xl text-center text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-snug">
-                    A Unified Global<br />
-                    Payment Processing Solution<br />
-                    for Acquirers
+                <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
+                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                    A Unified Global Payment Processing Solution
+                    <br className="hidden md:inline" />
+                    for Acquirers — Banks & Payment Aggregators
                   </h2>
+
+                  <p className="mt-4 text-center text-sm md:text-base text-muted-foreground">
+                    Supports POS and E-com payments for
+                  </p>
+
+                  <div className="mt-4 flex items-center gap-8">
+                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                        <svg width="16" height="12" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <rect x="0.5" y="2" width="19" height="10" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
+                          <rect x="2" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
+                        </svg>
+                      </span>
+                      <span className="font-medium">Cards</span>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                          <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </span>
+                      <span className="font-medium">UPI</span>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-sm md:text-base text-slate-900">
+                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.4" />
+                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+                        </svg>
+                      </span>
+                      <span className="font-medium">Net-Banking</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
