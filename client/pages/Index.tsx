@@ -128,53 +128,46 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start md:items-end gap-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2Fd13840f6cb624a009db0d68f7f82e099?format=webp&width=800"
-                alt="Features"
-                className="w-64 md:w-80 rounded-md shadow-lg"
-              />
-
-              <ul className="space-y-4 mt-2">
-                <li className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-sky-500 text-white flex items-center justify-center">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
-                      <path d="M12 1v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      <rect x="4" y="7" width="16" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                      <path d="M8 11h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+            <div className="flex flex-col items-center justify-center gap-6">
+              <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
+                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 7v10a2 2 0 0 0 2 2h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M7 7a5 5 0 0 1 10 0" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Secure</div>
                     <div className="text-sm text-muted-foreground">End-to-end payment security</div>
                   </div>
-                </li>
+                </div>
 
-                <li className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-sky-400 text-white flex items-center justify-center">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
-                      <path d="M3 12h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                      <path d="M12 3v18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-500 text-white">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Speed</div>
                     <div className="text-sm text-muted-foreground">Fast transaction processing</div>
                   </div>
-                </li>
+                </div>
 
-                <li className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-sky-300 text-white flex items-center justify-center">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="block">
-                      <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-400 text-white">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M3 12h6l3-9 3 18 3-9h6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Scalable</div>
                     <div className="text-sm text-muted-foreground">Grow without limits</div>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
