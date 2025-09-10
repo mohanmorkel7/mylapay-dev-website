@@ -46,32 +46,39 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
       </div>
 
-      {/* Hero content */}
+      {/* Hero content (left aligned, bottom) */}
       <section
         aria-labelledby="hero-heading"
-        className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16 text-center text-white"
+        className="relative flex min-h-screen flex-col items-start justify-end px-6 pt-16 pb-24 text-left text-white"
       >
-        <h1
-          id="hero-heading"
-          className="max-w-4xl text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-sm"
-        >
-          Welcome to Our Site
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
-          We craft modern, responsive experiences your customers will love.
-        </p>
-        <div className="mt-10 flex items-center gap-4">
-          <a href="#about">
-            <Button className="h-12 px-6 text-base bg-primary hover:bg-primary/90 shadow-lg shadow-primary/30">
-              Learn More
-            </Button>
-          </a>
-          <a
-            href="#contact"
-            className="h-12 inline-flex items-center rounded-md px-6 text-base font-medium text-white/90 hover:text-white/100 transition-colors"
+        <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
+          <h1
+            id="hero-heading"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)]"
           >
-            Contact Us
-          </a>
+            Powering the
+            <br />
+            Future of Payments
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
+            Fast, secure payment infrastructure for modern businesses.
+          </p>
+
+          <div className="mt-8 flex items-center gap-4">
+            <a
+              href="#"
+              className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:shadow-lg transition"
+            >
+              Integrate with us
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-md hover:opacity-95 transition"
+            >
+              Schedule a demo
+            </a>
+          </div>
         </div>
 
         {/* Play overlay if autoplay blocked */}
