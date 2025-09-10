@@ -17,13 +17,11 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 bg-black/40 backdrop-blur border-b border-black/10">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <span className="inline-flex items-center justify-center rounded-md bg-white/90 p-1 shadow-sm">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2F6bb77510276f42a2badf7d1520f1310b?format=webp&width=800"
-              alt="Company logo"
-              className="h-9 w-auto block"
-            />
-          </span>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F9b23d41bd00a451298a1599df2fb1a80%2F6bb77510276f42a2badf7d1520f1310b?format=webp&width=800"
+            alt="Company logo"
+            className="h-8 w-auto rounded-sm"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
