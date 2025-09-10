@@ -45,28 +45,28 @@ export default function Index() {
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
-      {/* Fullscreen video background (cycle through dummy videos) */}
-      <div className="fixed inset-0 -z-10">
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
-          src={videoList[currentVideo]}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden
-          tabIndex={-1}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
-      </div>
-
-      {/* Hero content (left aligned, bottom) */}
+      {/* Hero content (video plays only in this section) */}
       <section
         aria-labelledby="hero-heading"
-        className="relative flex min-h-screen flex-col items-start justify-end px-6 pt-16 pb-16 md:pb-20 lg:pb-24 text-left text-white"
+        className="relative flex min-h-[68vh] flex-col items-start justify-end px-6 pt-16 pb-16 md:pb-20 lg:pb-24 text-left text-white overflow-hidden"
       >
+        {/* Video background inside hero only */}
+        <div className="absolute inset-0 -z-10">
+          <video
+            ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover"
+            src={videoList[currentVideo]}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-hidden
+            tabIndex={-1}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
+        </div>
+
         <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
           <h1
             id="hero-heading"
