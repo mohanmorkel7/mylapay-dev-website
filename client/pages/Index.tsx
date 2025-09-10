@@ -1,17 +1,47 @@
 import { Button } from "@/components/ui/button";
+import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [needsInteraction, setNeedsInteraction] = useState(false);
+
+  useEffect(() => {
+    const tryPlay = async () => {
+      try {
+        await videoRef.current?.play();
+      } catch (err) {
+        // Autoplay blocked, show play button
+        setNeedsInteraction(true);
+      }
+    };
+
+    tryPlay();
+  }, []);
+
+  const handleManualPlay = async () => {
+    try {
+      await videoRef.current?.play();
+      setNeedsInteraction(false);
+    } catch (e) {
+      // ignore
+    }
+  };
+
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
       {/* Fullscreen video background */}
       <div className="fixed inset-0 -z-10">
         <video
+          ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover"
           src="https://videos.pexels.com/video-files/3183172/3183172-hd_1920_1080_25fps.mp4"
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
+          aria-hidden
+          tabIndex={-1}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
       </div>
