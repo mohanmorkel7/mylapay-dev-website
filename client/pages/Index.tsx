@@ -48,7 +48,7 @@ export default function Index() {
       {/* Hero content (video plays only in this section) */}
       <section
         aria-labelledby="hero-heading"
-        className="relative flex min-h-[68vh] flex-col items-start justify-end px-6 pt-16 pb-16 md:pb-20 lg:pb-24 text-left text-white overflow-hidden"
+        className="relative flex min-h-screen flex-col items-start justify-end px-6 pt-16 pb-16 md:pb-20 lg:pb-24 text-left text-white overflow-hidden"
       >
         {/* Video background inside hero only */}
         <div className="absolute inset-0 -z-10">
