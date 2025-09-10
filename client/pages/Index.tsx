@@ -215,26 +215,17 @@ export default function Index() {
 
       {/* Global map section */}
       <section id="global-map" className="relative bg-background py-24 md:py-32 overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(hsl(var(--foreground) / 0.12) 1px, transparent 1px)",
-            backgroundSize: "16px 16px",
-          }}
-        />
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
             <div className="relative">
-              <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
+              <div className="relative w-full h-[220px] md:h-[300px] lg:h-[360px] flex items-center justify-center">
                 <div
                   aria-hidden
-                  className="w-full h-full max-w-4xl"
+                  className="w-full h-full max-w-2xl"
                   style={{
-                    color: "hsl(var(--primary))",
-                    backgroundImage: "radial-gradient(currentColor 1px, transparent 1px)",
-                    backgroundSize: "12px 12px",
+                    color: "#2caee4",
+                    backgroundImage: "radial-gradient(currentColor 1.5px, transparent 1.5px)",
+                    backgroundSize: "8px 8px",
                     WebkitMaskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
                     WebkitMaskSize: "contain",
                     WebkitMaskPosition: "center",
