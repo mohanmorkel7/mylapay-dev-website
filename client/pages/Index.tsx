@@ -112,17 +112,17 @@ export default function Index() {
       <section id="about" className="bg-background/70 backdrop-blur-sm">
         <div className="container mx-auto py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="flex flex-col items-center justify-center text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
                 The Next-Gen
                 <br />
                 Payment Company
               </h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-xl">
+              <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
                 A Smart payment infrastructure
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3 justify-center">
                 <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">
                   Designed in India
                 </span>
@@ -134,7 +134,7 @@ export default function Index() {
 
             <div className="flex flex-col items-center justify-center gap-6">
               <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
-                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
+                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 mx-auto w-full md:w-auto">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                       <path
