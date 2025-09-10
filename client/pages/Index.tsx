@@ -29,12 +29,12 @@ export default function Index() {
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
-      {/* Fullscreen video background */}
+      {/* Fullscreen video background (cycle through dummy videos) */}
       <div className="fixed inset-0 -z-10">
         <video
           ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          src="https://videos.pexels.com/video-files/3183172/3183172-hd_1920_1080_25fps.mp4"
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
+          src={videoList[currentVideo]}
           autoPlay
           muted
           loop
