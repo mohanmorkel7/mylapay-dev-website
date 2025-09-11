@@ -43,6 +43,58 @@ export default function Index() {
     }
   };
 
+  // Carousel slides for feature cards
+  const slides = [
+    {
+      title: "Global Coverage",
+      description: "Accept payments across borders with local acquiring and multi-currency support.",
+    },
+    {
+      title: "Omnichannel",
+      description: "Unified processing for POS, e-commerce and mobile channels.",
+    },
+    {
+      title: "Fast Onboarding",
+      description: "Streamlined integration and rapid merchant onboarding.",
+    },
+    {
+      title: "Secure & Compliant",
+      description: "Enterprise-grade security with regulatory compliance.",
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slideCount = slides.length;
+  const slideIntervalRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const start = () => {
+      slideIntervalRef.current = window.setInterval(() => {
+        setCurrentSlide((s) => (s + 1) % slideCount);
+      }, 5000);
+    };
+
+    start();
+    return () => {
+      if (slideIntervalRef.current) window.clearInterval(slideIntervalRef.current);
+    };
+  }, [slideCount]);
+
+  const pauseCarousel = () => {
+    if (slideIntervalRef.current) {
+      window.clearInterval(slideIntervalRef.current);
+      slideIntervalRef.current = null;
+    }
+  };
+
+  const resumeCarousel = () => {
+    if (!slideIntervalRef.current) {
+      slideIntervalRef.current = window.setInterval(() => {
+        setCurrentSlide((s) => (s + 1) % slideCount);
+      }, 5000);
+    }
+  };
+
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
       {/* Hero content (video plays only in this section) */}
@@ -290,6 +342,61 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carousel" className="bg-background">
+        <div className="container mx-auto py-12 md:py-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="relative">
+              <div
+                className="overflow-hidden rounded-xl"
+                onMouseEnter={pauseCarousel}
+                onMouseLeave={resumeCarousel}
+              >
+                <div
+                  className="flex transition-transform duration-500"
+                  style={{
+                    width: `${slides.length * 100}%`,
+                    transform: `translateX(-${currentSlide * (100 / slides.length)}%)`,
+                  }}
+                >
+                  {slides.map((s, idx) => (
+                    <div key={idx} className="w-full flex-shrink-0 px-4 sm:px-6 md:px-8">
+                      <div className="rounded-xl border bg-card/70 p-8 h-full flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-xl md:text-2xl font-semibold text-slate-900">{s.title}</h3>
+                          <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
+                        </div>
+                        <div className="mt-6">
+                          <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-[#2caee4]">
+                            Learn more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                              <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-6 flex items-center justify-center gap-3">
+                {slides.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentSlide(i)}
+                    aria-label={`Go to slide ${i + 1}`}
+                    className={`h-2 w-2 rounded-full transition-all ${
+                      i === currentSlide ? "bg-slate-900 dark:bg-white w-6" : "bg-slate-300"
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           </div>
