@@ -373,9 +373,9 @@ export default function Index() {
                 >
                   {slides.map((s, idx) => (
                     <div key={idx} className="w-full flex-shrink-0 px-4 sm:px-6 md:px-8">
-                      <div className="rounded-xl bg-white p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 items-stretch">
-                        <div className="md:w-1/2 flex-shrink-0 flex items-center justify-center">
-                          <div className="w-full h-44 md:h-56 rounded-lg bg-gradient-to-br from-slate-50 to-white border border-slate-100 flex items-center justify-center">
+                      <div className="rounded-xl bg-white p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px]">
+                        <div className="md:w-56 md:h-auto flex-shrink-0">
+                          <div className="w-full h-56 md:h-full rounded-lg bg-gradient-to-br from-slate-50 to-white border border-slate-100 flex items-center justify-center">
                             <svg width="64" height="44" viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                               <rect x="2" y="2" width="60" height="40" rx="8" fill="#f8fafb" stroke="#e6eef3" />
                               <path d="M10 32h44" stroke="#dbeff6" strokeWidth="2" strokeLinecap="round" />
@@ -388,12 +388,9 @@ export default function Index() {
                         <div className="flex-1 flex flex-col justify-between">
                           <div>
                             <div className="flex items-center gap-4">
-                              <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                  <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                                  <rect x="6" y="9" width="4" height="3" rx="0.6" fill="currentColor" />
-                                </svg>
-                              </div>
+                              <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">{
+                                /* feature icon */
+                              }</div>
                             </div>
 
                             <h3 className="mt-4 text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
