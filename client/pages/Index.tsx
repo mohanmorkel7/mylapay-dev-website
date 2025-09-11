@@ -46,20 +46,27 @@ export default function Index() {
   // Carousel slides for feature cards
   const slides = [
     {
-      title: "Global Coverage",
-      description: "Accept payments across borders with local acquiring and multi-currency support.",
+      key: "acquiring",
+      title: "Acquiring support",
+      description:
+        "Local and cross-border acquiring with settlement and reconciliation for acquirers.",
     },
     {
-      title: "Omnichannel",
-      description: "Unified processing for POS, e-commerce and mobile channels.",
+      key: "card",
+      title: "Card Payments",
+      description:
+        "End-to-end card acceptance: tokenization, authorization, settlement and reporting.",
     },
     {
-      title: "Fast Onboarding",
-      description: "Streamlined integration and rapid merchant onboarding.",
+      key: "upi",
+      title: "UPI payments",
+      description: "Fast, low-cost UPI acceptance with instant settlement and reconciliation.",
     },
     {
-      title: "Secure & Compliant",
-      description: "Enterprise-grade security with regulatory compliance.",
+      key: "orchestration",
+      title: "Payment Orchestration",
+      description:
+        "Smart routing, failover and optimization across multiple providers to maximize success rates.",
     },
   ];
 
