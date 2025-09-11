@@ -388,9 +388,33 @@ export default function Index() {
                         <div className="flex-1 flex flex-col justify-between">
                           <div>
                             <div className="flex items-center gap-4">
-                              <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">{
-                                /* feature icon */
-                              }</div>
+                              <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                                {s.key === "acquiring" ? (
+                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                    <path d="M3 11h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                                    <path d="M6 11v6h3v-4h6v4h3v-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M12 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                                  </svg>
+                                ) : s.key === "card" ? (
+                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                    <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
+                                    <rect x="6" y="9" width="4" height="3" rx="0.6" fill="currentColor" />
+                                  </svg>
+                                ) : s.key === "upi" ? (
+                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                    <polygon points="4,8 11,12 4,16" fill="currentColor" />
+                                    <polygon points="13,8 20,12 13,16" fill="currentColor" />
+                                  </svg>
+                                ) : (
+                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                    <circle cx="6" cy="6" r="2" fill="currentColor" />
+                                    <circle cx="18" cy="6" r="2" fill="currentColor" />
+                                    <circle cx="12" cy="16" r="2" fill="currentColor" />
+                                    <path d="M7.5 7.5L11 14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M16.5 7.5L13 14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                                  </svg>
+                                )}
+                              </div>
                             </div>
 
                             <h3 className="mt-4 text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
