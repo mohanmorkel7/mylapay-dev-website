@@ -486,7 +486,7 @@ export default function Index() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Compliance First</h4>
+                  <h4 className="text-lg font-semibold text-slate-900">Compliance<br/>First</h4>
                   <p className="mt-2 text-sm text-muted-foreground">PCI-DSS, PCI-3DS, PCI-S3, ISO 27001, RBI SAR certified.</p>
                 </div>
               </li>
@@ -511,7 +511,7 @@ export default function Index() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Modular Deployment</h4>
+                  <h4 className="text-lg font-semibold text-slate-900">Modular<br/>Deployment</h4>
                   <p className="mt-2 text-sm text-muted-foreground">Integrate only what you need, when you need it, with modular APIs.</p>
                 </div>
               </li>
