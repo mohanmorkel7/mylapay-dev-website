@@ -50,23 +50,27 @@ export default function Index() {
       title: "Acquiring support",
       description:
         "Local and cross-border acquiring with settlement and reconciliation for acquirers.",
+      image: "https://picsum.photos/seed/acquiring/800/800",
     },
     {
       key: "card",
       title: "Card Payments",
       description:
         "End-to-end card acceptance: tokenization, authorization, settlement and reporting.",
+      image: "https://picsum.photos/seed/card/800/800",
     },
     {
       key: "upi",
       title: "UPI payments",
       description: "Fast, low-cost UPI acceptance with instant settlement and reconciliation.",
+      image: "https://picsum.photos/seed/upi/800/800",
     },
     {
       key: "orchestration",
       title: "Payment Orchestration",
       description:
         "Smart routing, failover and optimization across multiple providers to maximize success rates.",
+      image: "https://picsum.photos/seed/orchestration/800/800",
     },
   ];
 
