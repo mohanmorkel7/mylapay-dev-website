@@ -267,8 +267,8 @@ export default function Index() {
                     <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
                       <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <path d="M3.2 21.1L13.6 3.5c0.5-0.9 1.7-1 2.2-0.1l4 6c0.4 0.6 0 1.3-0.7 1.6l-6.6 2.8-4.2 7.3c-0.4 0.7-1.3 0.9-1.9 0.5-0.5-0.3-0.8-0.9-0.4-1.6z" fill="currentColor" />
-                          <path d="M14.6 10.6L18 6.8" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" />
+                          <polygon points="4,6 12,12 4,18" fill="currentColor" />
+                          <polygon points="12,6 20,12 12,18" fill="currentColor" />
                         </svg>
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
