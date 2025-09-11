@@ -249,7 +249,7 @@ export default function Index() {
                     Payment Aggregators
                   </h2>
 
-                  <p className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white">
+                  <p className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold">
                     Supports POS and E-com payments for
                   </p>
 
@@ -261,7 +261,7 @@ export default function Index() {
                           <rect x="2" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
                         </svg>
                       </span>
-                      <span className="font-medium text-slate-900 dark:text-white">Cards</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">Cards</span>
                     </div>
 
                     <div className="flex items-center gap-2 text-sm md:text-base">
@@ -271,7 +271,7 @@ export default function Index() {
                           <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </span>
-                      <span className="font-medium text-slate-900 dark:text-white">UPI</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
                     </div>
 
                     <div className="flex items-center gap-2 text-sm md:text-base">
@@ -281,7 +281,7 @@ export default function Index() {
                           <path d="M3 12h18" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
                         </svg>
                       </span>
-                      <span className="font-medium text-slate-900 dark:text-white">Net-Banking</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">Net-Banking</span>
                     </div>
                   </div>
                 </div>
