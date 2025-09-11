@@ -452,11 +452,11 @@ export default function Index() {
       </section>
 
       <section id="scale" className="bg-background">
-        <div className="container mx-auto py-12 md:py-16 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
+        <div className="container mx-auto py-8 md:py-12 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold">
             Built for Scale, Engineered for
           </h2>
-          <h3 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold">
+          <h3 className="mt-2 text-2xl md:text-3xl lg:text-4xl font-extrabold">
             Security & Designed for Profitability
           </h3>
         </div>
