@@ -249,7 +249,7 @@ export default function Index() {
                     Payment Aggregators
                   </h2>
 
-                  <p className="mt-10 md:mt-12 text-center text-sm md:text-base text-slate-900 dark:text-white">
+                  <p className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white">
                     Supports POS and E-com payments for
                   </p>
 
