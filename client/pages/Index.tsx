@@ -265,11 +265,8 @@ export default function Index() {
                     </div>
 
                     <div className="flex items-center gap-2 text-sm md:text-base">
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <rect x="0.5" y="0.5" width="23" height="13" rx="3" stroke="currentColor" strokeWidth="1" fill="none" />
-                          <text x="12" y="10" fill="currentColor" fontSize="7" fontWeight="700" fontFamily="Inter, Arial, sans-serif" textAnchor="middle">UPI</text>
-                        </svg>
+                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb]">
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Fb4ca9fd1a18f44a6b39fdeaea9d08d0b?format=webp&width=800" alt="UPI logo" className="h-4 w-4 object-contain" />
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
                     </div>
