@@ -266,9 +266,9 @@ export default function Index() {
 
                     <div className="flex items-center gap-2 text-sm md:text-base">
                       <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                          <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <rect x="0.5" y="0.5" width="23" height="13" rx="3" stroke="currentColor" strokeWidth="1" fill="none" />
+                          <text x="12" y="10" fill="currentColor" fontSize="7" fontWeight="700" fontFamily="Inter, Arial, sans-serif" textAnchor="middle">UPI</text>
                         </svg>
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
