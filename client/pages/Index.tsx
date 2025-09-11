@@ -366,19 +366,41 @@ export default function Index() {
                 >
                   {slides.map((s, idx) => (
                     <div key={idx} className="w-full flex-shrink-0 px-4 sm:px-6 md:px-8">
-                      <div className="rounded-xl border bg-card/70 p-8 h-full flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-xl md:text-2xl font-semibold text-slate-900">{s.title}</h3>
-                          <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
+                      <div className="rounded-xl bg-white p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 items-stretch">
+                        <div className="md:w-1/2 flex-shrink-0">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F9061757a5a7f47a291df5f33e17f292f?format=webp&width=1200"
+                            alt={s.title}
+                            className="w-full h-44 md:h-56 object-cover rounded-lg"
+                          />
                         </div>
-                        <div className="mt-6">
-                          <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-[#2caee4]">
-                            Learn more
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                              <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                              <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                          </a>
+
+                        <div className="flex-1 flex flex-col justify-between">
+                          <div>
+                            <div className="flex items-start gap-4">
+                              <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                  <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
+                                  <rect x="6" y="9" width="4" height="3" rx="0.6" fill="currentColor" />
+                                </svg>
+                              </div>
+
+                              <div>
+                                <h3 className="text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
+                                <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="mt-6">
+                            <a href="#" className="inline-flex items-center gap-2 text-sm md:text-base font-medium text-[#2caee4]">
+                              Learn more
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                                <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
