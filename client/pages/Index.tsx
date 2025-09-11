@@ -364,7 +364,7 @@ export default function Index() {
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               <div
-                className="overflow-hidden rounded-xl"
+                className="rounded-xl overflow-visible"
                 onMouseEnter={pauseCarousel}
                 onMouseLeave={resumeCarousel}
               >
