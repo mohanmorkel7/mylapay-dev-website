@@ -253,29 +253,29 @@ export default function Index() {
                     Supports POS and E-com payments for
                   </p>
 
-                  <div className="mt-4 flex items-center gap-8">
-                    <div className="flex items-center gap-2 text-sm md:text-base">
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                        <svg width="16" height="12" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <rect x="0.5" y="2" width="19" height="10" rx="2" stroke="currentColor" strokeWidth="1.2" fill="none" />
-                          <rect x="2" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
+                  <div className="mt-4 flex items-center gap-12">
+                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <rect x="1" y="2" width="18" height="10" rx="2" stroke="currentColor" strokeWidth="1.8" fill="none" />
+                          <rect x="3" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
                         </svg>
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">Cards</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm md:text-base">
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb]">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Fb4ca9fd1a18f44a6b39fdeaea9d08d0b?format=webp&width=800" alt="UPI logo" className="h-4 w-4 object-contain" />
+                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                        <img src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Fb4ca9fd1a18f44a6b39fdeaea9d08d0b?format=webp&width=800" alt="UPI logo" className="h-5 w-5 object-contain" />
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm md:text-base">
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.4" />
-                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8" />
+                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                         </svg>
                       </span>
                       <span className="font-semibold text-slate-900 dark:text-white">Net-Banking</span>
