@@ -367,29 +367,30 @@ export default function Index() {
                   {slides.map((s, idx) => (
                     <div key={idx} className="w-full flex-shrink-0 px-4 sm:px-6 md:px-8">
                       <div className="rounded-xl bg-white p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 items-stretch">
-                        <div className="md:w-1/2 flex-shrink-0">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F9061757a5a7f47a291df5f33e17f292f?format=webp&width=1200"
-                            alt={s.title}
-                            className="w-full h-44 md:h-56 object-cover rounded-lg"
-                          />
+                        <div className="md:w-1/2 flex-shrink-0 flex items-center justify-center">
+                          <div className="w-full h-44 md:h-56 rounded-lg bg-gradient-to-br from-slate-50 to-white border border-slate-100 flex items-center justify-center">
+                            <svg width="64" height="44" viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                              <rect x="2" y="2" width="60" height="40" rx="8" fill="#f8fafb" stroke="#e6eef3" />
+                              <path d="M10 32h44" stroke="#dbeff6" strokeWidth="2" strokeLinecap="round" />
+                              <rect x="10" y="8" width="20" height="12" rx="3" fill="#e6f7fb" />
+                              <rect x="34" y="8" width="18" height="12" rx="3" fill="#eaf6fb" />
+                            </svg>
+                          </div>
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
                           <div>
-                            <div className="flex items-start gap-4">
-                              <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                            <div className="flex items-center gap-4">
+                              <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                                   <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
                                   <rect x="6" y="9" width="4" height="3" rx="0.6" fill="currentColor" />
                                 </svg>
                               </div>
-
-                              <div>
-                                <h3 className="text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
-                                <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
-                              </div>
                             </div>
+
+                            <h3 className="mt-4 text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
+                            <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
                           </div>
 
                           <div className="mt-6">
