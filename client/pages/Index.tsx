@@ -62,7 +62,8 @@ export default function Index() {
     {
       key: "upi",
       title: "UPI payments",
-      description: "Fast, low-cost UPI acceptance with instant settlement and reconciliation.",
+      description:
+        "Fast, low-cost UPI acceptance with instant settlement and reconciliation.",
       image: "https://picsum.photos/seed/upi/800/800",
     },
     {
@@ -87,7 +88,8 @@ export default function Index() {
 
     start();
     return () => {
-      if (slideIntervalRef.current) window.clearInterval(slideIntervalRef.current);
+      if (slideIntervalRef.current)
+        window.clearInterval(slideIntervalRef.current);
     };
   }, [slideCount]);
 
@@ -277,7 +279,10 @@ export default function Index() {
       </section>
 
       {/* Global map section */}
-      <section id="global-map" className="relative bg-background py-6 md:py-8 overflow-hidden">
+      <section
+        id="global-map"
+        className="relative bg-background py-6 md:py-8 overflow-hidden"
+      >
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
             <div className="relative">
@@ -287,13 +292,16 @@ export default function Index() {
                   className="w-full h-full max-w-6xl"
                   style={{
                     color: "#2caee4",
-                    backgroundImage: "radial-gradient(currentColor 1.5px, transparent 1.5px)",
+                    backgroundImage:
+                      "radial-gradient(currentColor 1.5px, transparent 1.5px)",
                     backgroundSize: "6px 6px",
-                    WebkitMaskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
+                    WebkitMaskImage:
+                      "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
                     WebkitMaskSize: "100% 100%",
                     WebkitMaskPosition: "center",
                     WebkitMaskRepeat: "no-repeat",
-                    maskImage: "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
+                    maskImage:
+                      "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
                     maskSize: "100% 100%",
                     maskPosition: "center",
                     maskRepeat: "no-repeat",
@@ -319,37 +327,127 @@ export default function Index() {
                   <div className="mt-4 flex items-center gap-12">
                     <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
                       <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
-                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <rect x="1" y="2" width="18" height="10" rx="2" stroke="currentColor" strokeWidth="1.8" fill="none" />
-                          <rect x="3" y="5" width="4" height="3" rx="0.6" fill="currentColor" />
+                        <svg
+                          width="20"
+                          height="14"
+                          viewBox="0 0 20 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden
+                        >
+                          <rect
+                            x="1"
+                            y="2"
+                            width="18"
+                            height="10"
+                            rx="2"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                            fill="none"
+                          />
+                          <rect
+                            x="3"
+                            y="5"
+                            width="4"
+                            height="3"
+                            rx="0.6"
+                            fill="currentColor"
+                          />
                         </svg>
                       </span>
-                      <span className="font-semibold text-slate-900 dark:text-white">Cards</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        Cards
+                      </span>
                     </div>
 
                     <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
                       <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <polygon points="4,6 12,12 4,18" fill="currentColor" />
-                          <polygon points="12,6 20,12 12,18" fill="currentColor" />
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden
+                        >
+                          <polygon
+                            points="4,6 12,12 4,18"
+                            fill="currentColor"
+                          />
+                          <polygon
+                            points="12,6 20,12 12,18"
+                            fill="currentColor"
+                          />
                         </svg>
                       </span>
-                      <span className="font-semibold text-slate-900 dark:text-white">UPI</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        UPI
+                      </span>
                     </div>
 
                     <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
                       <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                          <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" fill="none" />
-                          <path d="M12 3v18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-                          <path d="M3 12h18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-                          <path d="M5 6c3 1.5 6 1.5 10 0" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                          <path d="M5 18c3-1.5 6-1.5 10 0" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                          <path d="M7 3c1.5 4 1.5 8 0 12" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" />
-                          <path d="M17 3c-1.5 4-1.5 8 0 12" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" fill="none" />
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                            stroke="currentColor"
+                            strokeWidth="1.6"
+                            fill="none"
+                          />
+                          <path
+                            d="M12 3v18"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M3 12h18"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M5 6c3 1.5 6 1.5 10 0"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            fill="none"
+                          />
+                          <path
+                            d="M5 18c3-1.5 6-1.5 10 0"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            fill="none"
+                          />
+                          <path
+                            d="M7 3c1.5 4 1.5 8 0 12"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            fill="none"
+                          />
+                          <path
+                            d="M17 3c-1.5 4-1.5 8 0 12"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            fill="none"
+                          />
                         </svg>
                       </span>
-                      <span className="font-semibold text-slate-900 dark:text-white">Net-Banking</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        Net-Banking
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -376,10 +474,18 @@ export default function Index() {
                   }}
                 >
                   {slides.map((s, idx) => (
-                    <div key={idx} className="flex-shrink-0 px-4 sm:px-6 md:px-8" style={{ width: `${100 / slides.length}%` }}>
+                    <div
+                      key={idx}
+                      className="flex-shrink-0 px-4 sm:px-6 md:px-8"
+                      style={{ width: `${100 / slides.length}%` }}
+                    >
                       <div className="rounded-xl bg-white p-6 md:p-8 shadow-xl hover:shadow-2xl transition-shadow flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px] overflow-hidden">
                         <div className="md:w-56 md:h-auto flex-shrink-0">
-                          <img src={s.image} alt={s.title} className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-100" />
+                          <img
+                            src={s.image}
+                            alt={s.title}
+                            className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-100"
+                          />
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
@@ -387,43 +493,161 @@ export default function Index() {
                             <div className="flex items-center gap-4">
                               <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
                                 {s.key === "acquiring" ? (
-                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                    <path d="M3 11h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                                    <path d="M6 11v6h3v-4h6v4h3v-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M12 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden
+                                  >
+                                    <path
+                                      d="M3 11h18"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                    />
+                                    <path
+                                      d="M6 11v6h3v-4h6v4h3v-6"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                    <path
+                                      d="M12 3v4"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                    />
                                   </svg>
                                 ) : s.key === "card" ? (
-                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                    <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                                    <rect x="6" y="9" width="4" height="3" rx="0.6" fill="currentColor" />
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden
+                                  >
+                                    <rect
+                                      x="3"
+                                      y="6"
+                                      width="18"
+                                      height="12"
+                                      rx="2"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                    />
+                                    <rect
+                                      x="6"
+                                      y="9"
+                                      width="4"
+                                      height="3"
+                                      rx="0.6"
+                                      fill="currentColor"
+                                    />
                                   </svg>
                                 ) : s.key === "upi" ? (
-                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                    <polygon points="4,8 11,12 4,16" fill="currentColor" />
-                                    <polygon points="13,8 20,12 13,16" fill="currentColor" />
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden
+                                  >
+                                    <polygon
+                                      points="4,8 11,12 4,16"
+                                      fill="currentColor"
+                                    />
+                                    <polygon
+                                      points="13,8 20,12 13,16"
+                                      fill="currentColor"
+                                    />
                                   </svg>
                                 ) : (
-                                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                    <circle cx="6" cy="6" r="2" fill="currentColor" />
-                                    <circle cx="18" cy="6" r="2" fill="currentColor" />
-                                    <circle cx="12" cy="16" r="2" fill="currentColor" />
-                                    <path d="M7.5 7.5L11 14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M16.5 7.5L13 14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                                  <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden
+                                  >
+                                    <circle
+                                      cx="6"
+                                      cy="6"
+                                      r="2"
+                                      fill="currentColor"
+                                    />
+                                    <circle
+                                      cx="18"
+                                      cy="6"
+                                      r="2"
+                                      fill="currentColor"
+                                    />
+                                    <circle
+                                      cx="12"
+                                      cy="16"
+                                      r="2"
+                                      fill="currentColor"
+                                    />
+                                    <path
+                                      d="M7.5 7.5L11 14"
+                                      stroke="currentColor"
+                                      strokeWidth="1.2"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                    <path
+                                      d="M16.5 7.5L13 14"
+                                      stroke="currentColor"
+                                      strokeWidth="1.2"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
                                   </svg>
                                 )}
                               </div>
                             </div>
 
-                            <h3 className="mt-4 text-lg md:text-2xl font-semibold text-slate-900">{s.title}</h3>
-                            <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">{s.description}</p>
+                            <h3 className="mt-4 text-lg md:text-2xl font-semibold text-slate-900">
+                              {s.title}
+                            </h3>
+                            <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-xl">
+                              {s.description}
+                            </p>
                           </div>
 
                           <div className="mt-6">
-                            <a href="#" className="inline-flex items-center gap-2 text-sm md:text-base font-medium text-[#2caee4]">
+                            <a
+                              href="#"
+                              className="inline-flex items-center gap-2 text-sm md:text-base font-medium text-[#2caee4]"
+                            >
                               Learn more
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                                <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                              <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden
+                              >
+                                <path
+                                  d="M5 12h14"
+                                  stroke="currentColor"
+                                  strokeWidth="1.6"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                                <path
+                                  d="M13 6l6 6-6 6"
+                                  stroke="currentColor"
+                                  strokeWidth="1.6"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
                               </svg>
                             </a>
                           </div>
@@ -441,7 +665,9 @@ export default function Index() {
                     onClick={() => setCurrentSlide(i)}
                     aria-label={`Go to slide ${i + 1}`}
                     className={`h-2 w-2 rounded-full transition-all ${
-                      i === currentSlide ? "bg-slate-900 dark:bg-white w-6" : "bg-slate-300"
+                      i === currentSlide
+                        ? "bg-slate-900 dark:bg-white w-6"
+                        : "bg-slate-300"
                     }`}
                   />
                 ))}
@@ -466,57 +692,130 @@ export default function Index() {
         <div className="w-full border-t border-b border-slate-100">
           <div className="container mx-auto py-12 md:py-16">
             <div className="max-w-6xl mx-auto">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-              <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="currentColor" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Enterprise-Grade Performance</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Handle 5000+ TPS, cloud-native with 99.99% uptime.</p>
-                </div>
-              </li>
+              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+                  <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden
+                    >
+                      <path
+                        d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      Enterprise-Grade Performance
+                    </h4>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Handle 5000+ TPS, cloud-native with 99.99% uptime.
+                    </p>
+                  </div>
+                </li>
 
-              <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M12 2l7 4v6c0 5-3.5 9.7-7 10-3.5-0.3-7-5-7-10V6l7-4z" stroke="currentColor" strokeWidth="1.2" fill="none" />
-                    <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Compliance<br/>First</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">PCI-DSS, PCI-3DS, PCI-S3, ISO 27001, RBI SAR certified.</p>
-                </div>
-              </li>
+                <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+                  <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden
+                    >
+                      <path
+                        d="M12 2l7 4v6c0 5-3.5 9.7-7 10-3.5-0.3-7-5-7-10V6l7-4z"
+                        stroke="currentColor"
+                        strokeWidth="1.2"
+                        fill="none"
+                      />
+                      <path
+                        d="M9 12l2 2 4-4"
+                        stroke="currentColor"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      Compliance
+                      <br />
+                      First
+                    </h4>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      PCI-DSS, PCI-3DS, PCI-S3, ISO 27001, RBI SAR certified.
+                    </p>
+                  </div>
+                </li>
 
-              <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M3 17h18v3H3z" fill="currentColor" />
-                    <path d="M7 13V7h2v6H7zM11 13V4h2v9h-2zM15 13v-3h2v3h-2z" fill="currentColor" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Profit-Driven Intelligence</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Real-time analytics to maximize margins.</p>
-                </div>
-              </li>
+                <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+                  <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden
+                    >
+                      <path d="M3 17h18v3H3z" fill="currentColor" />
+                      <path
+                        d="M7 13V7h2v6H7zM11 13V4h2v9h-2zM15 13v-3h2v3h-2z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      Profit-Driven Intelligence
+                    </h4>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Real-time analytics to maximize margins.
+                    </p>
+                  </div>
+                </li>
 
-              <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r-0 border-slate-100">
-                <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                    <path d="M12 2v4M12 18v4M4 12h4M16 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900">Modular<br/>Deployment</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Integrate only what you need, when you need it.</p>
-                </div>
-              </li>
-            </ul>
+                <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r-0 border-slate-100">
+                  <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden
+                    >
+                      <path
+                        d="M12 2v4M12 18v4M4 12h4M16 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"
+                        stroke="currentColor"
+                        strokeWidth="1.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      Modular
+                      <br />
+                      Deployment
+                    </h4>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Integrate only what you need, when you need it.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
