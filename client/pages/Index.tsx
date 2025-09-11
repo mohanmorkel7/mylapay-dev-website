@@ -690,9 +690,7 @@ export default function Index() {
 
       <section id="features" className="bg-background">
         <div className="w-full border-t border-b border-slate-100">
-          <div className="container mx-auto py-12 md:py-16">
-            <div className="max-w-6xl mx-auto">
-              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
                 <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
                   <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
                     <svg
@@ -816,8 +814,6 @@ export default function Index() {
                   </div>
                 </li>
               </ul>
-            </div>
-          </div>
         </div>
       </section>
 
