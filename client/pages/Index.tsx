@@ -379,14 +379,7 @@ export default function Index() {
                     <div key={idx} className="flex-shrink-0 px-4 sm:px-6 md:px-8" style={{ width: `${100 / slides.length}%` }}>
                       <div className="rounded-xl bg-white p-6 md:p-8 shadow-xl hover:shadow-2xl transition-shadow flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px] overflow-hidden">
                         <div className="md:w-56 md:h-auto flex-shrink-0">
-                          <div className="w-full h-56 md:h-full rounded-lg bg-gradient-to-br from-slate-50 to-white border border-slate-100 flex items-center justify-center">
-                            <svg width="64" height="44" viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                              <rect x="2" y="2" width="60" height="40" rx="8" fill="#f8fafb" stroke="#e6eef3" />
-                              <path d="M10 32h44" stroke="#dbeff6" strokeWidth="2" strokeLinecap="round" />
-                              <rect x="10" y="8" width="20" height="12" rx="3" fill="#e6f7fb" />
-                              <rect x="34" y="8" width="18" height="12" rx="3" fill="#eaf6fb" />
-                            </svg>
-                          </div>
+                          <img src={s.image} alt={s.title} className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-100" />
                         </div>
 
                         <div className="flex-1 flex flex-col justify-between">
