@@ -500,7 +500,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-slate-900">Profit-Driven Intelligence</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Real-time analytics to maximize margins and conversion rates.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Real-time analytics to maximize margins.</p>
                 </div>
               </li>
 
@@ -512,7 +512,7 @@ export default function Index() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-slate-900">Modular<br/>Deployment</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Integrate only what you need, when you need it, with modular APIs.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Integrate only what you need, when you need it.</p>
                 </div>
               </li>
             </ul>
