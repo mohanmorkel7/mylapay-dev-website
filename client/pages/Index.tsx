@@ -372,7 +372,7 @@ export default function Index() {
                   }}
                 >
                   {slides.map((s, idx) => (
-                    <div key={idx} className="w-full flex-shrink-0 px-4 sm:px-6 md:px-8">
+                    <div key={idx} className="flex-shrink-0 px-4 sm:px-6 md:px-8" style={{ width: `${100 / slides.length}%` }}>
                       <div className="rounded-xl bg-white p-6 md:p-8 shadow-md flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px]">
                         <div className="md:w-56 md:h-auto flex-shrink-0">
                           <div className="w-full h-56 md:h-full rounded-lg bg-gradient-to-br from-slate-50 to-white border border-slate-100 flex items-center justify-center">
