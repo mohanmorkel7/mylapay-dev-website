@@ -484,7 +484,7 @@ export default function Index() {
                           <img
                             src={s.image}
                             alt={s.title}
-                            className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-100"
+                            className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-300"
                           />
                         </div>
 
@@ -689,9 +689,9 @@ export default function Index() {
       </section>
 
       <section id="features" className="bg-background">
-        <div className="w-full border-t border-b border-slate-100">
+        <div className="w-full border-t border-b border-slate-300">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
-            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
                 <svg
                   width="20"
@@ -717,7 +717,7 @@ export default function Index() {
               </div>
             </li>
 
-            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
                 <svg
                   width="20"
@@ -755,7 +755,7 @@ export default function Index() {
               </div>
             </li>
 
-            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-100">
+            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
                 <svg
                   width="20"
@@ -782,7 +782,7 @@ export default function Index() {
               </div>
             </li>
 
-            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r-0 border-slate-100">
+            <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r-0 border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
                 <svg
                   width="20"
