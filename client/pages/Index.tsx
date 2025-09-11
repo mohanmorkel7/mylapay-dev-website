@@ -451,6 +451,17 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="scale" className="bg-background">
+        <div className="container mx-auto py-12 md:py-16 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
+            Built for Scale, Engineered for
+          </h2>
+          <h3 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold">
+            Security & Designed for Profitability
+          </h3>
+        </div>
+      </section>
+
       <section id="services" className="bg-background">
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
