@@ -274,7 +274,7 @@ export default function Index() {
 
       {/* Content sections for anchors */}
       <section id="about" className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-24 md:py-32" fromScale={0.9} toScale={1} fromOpacity={0.3} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-24 md:py-32" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="pl-6 md:pl-20">
               <Reveal as="h2" variant="scale" delay={0} className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
@@ -382,7 +382,7 @@ export default function Index() {
         id="global-map"
         className="relative bg-background py-6 md:py-8 overflow-hidden scroll-mt-20 md:scroll-mt-24"
       >
-        <ScrollScale as="div" className="container relative mx-auto" fromScale={0.9} toScale={1} fromOpacity={0.3} toOpacity={1}>
+        <ScrollScale as="div" className="container relative mx-auto" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="mx-auto max-w-6xl">
             <div className="relative">
               <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
@@ -557,7 +557,7 @@ export default function Index() {
       </section>
 
       <section id="carousel" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.92} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               <div
@@ -777,7 +777,7 @@ export default function Index() {
       </section>
 
       <section id="scale" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-8 md:py-12 text-center" fromScale={0.92} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-8 md:py-12 text-center" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Built for Scale, Engineered for
           </h2>
@@ -788,7 +788,7 @@ export default function Index() {
       </section>
 
       <section id="features" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="w-full border-t border-b border-slate-300" fromScale={0.94} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="w-full border-t border-b border-slate-300" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
@@ -917,7 +917,7 @@ export default function Index() {
       </section>
 
       <section id="products" className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.92} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
           </h2>
@@ -1541,7 +1541,7 @@ export default function Index() {
       </section>
 
       <section id="counters" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-6 md:py-10" fromScale={0.95} toScale={1} fromOpacity={0.5} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-6 md:py-10" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center divide-x divide-slate-200">
               <div className="px-6 py-4">
@@ -1581,7 +1581,7 @@ export default function Index() {
       </section>
 
       <section id="clients" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-10" fromScale={0.95} toScale={1} fromOpacity={0.5} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-10" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">
             Trusted By The Top Payment Aggregator & Gateways
           </h3>
@@ -1636,7 +1636,7 @@ export default function Index() {
       </section>
 
       <section id="testimonials" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.92} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="flex justify-center">
             <div className="relative w-full max-w-5xl">
               {/* decorative shadow under the carousel */}
@@ -1713,7 +1713,7 @@ export default function Index() {
       </section>
 
       <section id="who" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.92} toScale={1} fromOpacity={0.4} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" fromScale={0.8} toScale={1} fromOpacity={0.25} toOpacity={1}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div className="pr-4">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
