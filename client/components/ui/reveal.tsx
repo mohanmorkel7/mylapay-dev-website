@@ -25,7 +25,8 @@ export function Reveal({
   as = "div",
   variant = "scale",
   repeat = false,
-}: RevealProps) {
+  ...rest
+}: RevealProps & Record<string, any>) {
   const { ref, inView } = useInView<HTMLDivElement>({ once: !repeat, rootMargin: "0px 0px -10% 0px", threshold: 0.15 });
 
   const Comp = as as any;
