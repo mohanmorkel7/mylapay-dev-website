@@ -1696,11 +1696,89 @@ export default function Index() {
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Contact</h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Ready to start? Email us at hello@example.com and we���ll be in
+            Ready to start? Email us at hello@example.com and well be in
             touch.
           </p>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-[#05060a] text-white">
+        <div className="container mx-auto py-14">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div className="md:col-span-3">
+              <div className="flex items-center gap-3">
+                <img src="/placeholder.svg" alt="Mylapay" className="h-8 w-auto" />
+                <span className="font-semibold">Mylapay</span>
+              </div>
+
+              <p className="mt-4 text-sm text-slate-400">Copyright© 2025 Mylapay.com</p>
+              <p className="mt-2 text-xs text-slate-500">For grievance resolution, please contact our Grievance Officer at grievance@mylapay.com.</p>
+            </div>
+
+            <div className="md:col-span-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
+              <div>
+                <h4 className="text-sm font-semibold mb-3 text-slate-200">Resources</h4>
+                <ul className="space-y-2 text-slate-400">
+                  <li><a className="hover:text-white transition-colors" href="#">Case Study</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">Blog</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">FAQ</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-3 text-slate-200">Developers</h4>
+                <ul className="space-y-2 text-slate-400">
+                  <li><a className="hover:text-white transition-colors" href="#">API Reference</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">SDKs</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-3 text-slate-200">Company</h4>
+                <ul className="space-y-2 text-slate-400">
+                  <li><a className="hover:text-white transition-colors" href="#">About</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">Careers</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">Contact</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-3 text-slate-200">Products</h4>
+                <ul className="space-y-2 text-slate-400">
+                  <li><a className="hover:text-white transition-colors" href="#">Mylapay Secure</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">Mylapay Switch</a></li>
+                  <li><a className="hover:text-white transition-colors" href="#">IntelleWatch</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="md:col-span-3">
+              <h4 className="text-sm font-semibold mb-3 text-slate-200">Our Location</h4>
+              <div className="text-sm text-slate-400">
+                No 17/3, (Old No 8C), 2nd Floor, Pembroke, Shafee Mohammad Road,<br />Nungambakkam, Chennai, Tamil Nadu, India, 600006.
+              </div>
+
+              <div className="mt-4 text-sm text-slate-400">
+                <div>contactus@mylapay.com</div>
+                <div className="mt-2">+91 89254 61317</div>
+              </div>
+
+              <div className="mt-6 flex items-center gap-4 text-slate-400">
+                <a href="#" className="hover:text-white">f</a>
+                <a href="#" className="hover:text-white">in</a>
+                <a href="#" className="hover:text-white">YouTube</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 flex items-center justify-between text-xs text-slate-600">
+            <div>Acceptance policy</div>
+            <div>Privacy</div>
+          </div>
+        </div>
+      </footer>
+
     </main>
   );
 }
