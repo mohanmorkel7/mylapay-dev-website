@@ -1440,87 +1440,30 @@ export default function Index() {
 
       <section id="testimonials" className="bg-white">
         <div className="container mx-auto py-12 md:py-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-8">Unveil Client Experiences — Hear why they love us!</h2>
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-4xl">
+              {/* decorative shadow */}
+              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-[92%] h-6 bg-white rounded-xl filter blur-xl opacity-40"></div>
 
-          {/* Testimonials carousel with auto-rotate and hover pause */}
-          <div className="relative">
-            <div className="flex items-center justify-center">
-              <div className="flex gap-6 items-stretch overflow-hidden px-4" onMouseEnter={() => {}}>
-                {/* We'll use a controlled active index to highlight cards */}
-                <div className="w-full max-w-6xl mx-auto">
-                  <div className="flex flex-col md:flex-row items-stretch justify-center gap-6">
-                    {/* Card 1 */}
-                    <div className="flex-1 rounded-2xl border bg-white p-6 shadow-lg transform transition-all duration-500 hover:-translate-y-2">
-                      <div className="md:flex md:items-start md:gap-6">
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-slate-900">Unveil Client Experiences – Hear why they love us!</h3>
-                          <p className="mt-3 text-sm text-slate-600">We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership. Thank you for always being available and assisting us with our inquiries.</p>
+              <div className="relative rounded-2xl border border-slate-100 bg-white p-8 md:p-12">
+                <div className="md:flex md:items-start md:gap-8">
+                  <div className="md:w-2/3">
+                    <h3 className="text-xl md:text-2xl font-semibold text-slate-900">Unveil Client Experiences – Hear why they love us!</h3>
+                    <p className="mt-4 text-sm md:text-base text-slate-600 leading-relaxed">We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership. Thank you for always being available and assisting us with our inquiries. Your dedication is greatly appreciated, and we wish you continued success.</p>
+                  </div>
 
-                          <div className="mt-6 flex items-center gap-4">
-                            <img src="/placeholder.svg" alt="Razorpay" className="h-8 w-8 rounded-sm" />
-                            <div>
-                              <div className="text-sm font-medium text-slate-900">Chetan Nagaraju</div>
-                              <div className="text-xs text-slate-500">Senior Director Business Finance</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="hidden md:flex items-center justify-center flex-shrink-0 w-40">
-                          <img src="/placeholder.svg" alt="Razorpay logo" className="h-10 w-auto" />
-                        </div>
-                      </div>
+                  <div className="mt-6 md:mt-0 md:w-1/3 flex flex-col items-start md:items-end justify-between">
+                    <div className="hidden md:block">
+                      <img src="/placeholder.svg" alt="Razorpay logo" className="h-10 w-auto mb-4" />
                     </div>
 
-                    {/* Card 2 */}
-                    <div className="flex-1 rounded-2xl border bg-white p-6 shadow-lg transform transition-all duration-500 hover:-translate-y-2">
-                      <div className="md:flex md:items-start md:gap-6">
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-slate-900">Seamless Integration and Reliable Support</h3>
-                          <p className="mt-3 text-sm text-slate-600">Their team helped us integrate quickly and provided responsive support. Transactions are processed reliably and reporting is clear. We consider them a key partner in our growth.</p>
-
-                          <div className="mt-6 flex items-center gap-4">
-                            <img src="/placeholder.svg" alt="Client" className="h-8 w-8 rounded-sm" />
-                            <div>
-                              <div className="text-sm font-medium text-slate-900">Nisha Patel</div>
-                              <div className="text-xs text-slate-500">Head of Payments</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="hidden md:flex items-center justify-center flex-shrink-0 w-40">
-                          <img src="/placeholder.svg" alt="Client logo" className="h-10 w-auto" />
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div className="flex-1 rounded-2xl border bg-white p-6 shadow-lg transform transition-all duration-500 hover:-translate-y-2">
-                      <div className="md:flex md:items-start md:gap-6">
-                        <div className="flex-1">
-                          <h3 className="text-lg font-semibold text-slate-900">Performance and Cost Savings</h3>
-                          <p className="mt-3 text-sm text-slate-600">By optimizing routing and reconciliation, we reduced costs and improved success rates. Their analytics gave us actionable insights that drove measurable results.</p>
-
-                          <div className="mt-6 flex items-center gap-4">
-                            <img src="/placeholder.svg" alt="Client" className="h-8 w-8 rounded-sm" />
-                            <div>
-                              <div className="text-sm font-medium text-slate-900">Rajat Singh</div>
-                              <div className="text-xs text-slate-500">VP, Operations</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="hidden md:flex items-center justify-center flex-shrink-0 w-40">
-                          <img src="/placeholder.svg" alt="Client logo" className="h-10 w-auto" />
-                        </div>
-                      </div>
+                    <div className="mt-4 md:mt-0 text-left md:text-right">
+                      <div className="text-sm font-semibold text-slate-900">Chetan Nagaraju</div>
+                      <div className="text-xs text-slate-500">Senior Director Business Finance</div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Controls */}
-            <div className="mt-6 flex items-center justify-center gap-3">
-              <button className="h-2 w-8 rounded-full bg-slate-200" aria-hidden />
-              <button className="h-2 w-8 rounded-full bg-slate-200" aria-hidden />
-              <button className="h-2 w-8 rounded-full bg-slate-200" aria-hidden />
             </div>
           </div>
         </div>
