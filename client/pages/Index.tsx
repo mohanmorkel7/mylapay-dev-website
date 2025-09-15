@@ -145,7 +145,8 @@ export default function Index() {
 
     start();
     return () => {
-      if (testimonialIntervalRef.current) window.clearInterval(testimonialIntervalRef.current);
+      if (testimonialIntervalRef.current)
+        window.clearInterval(testimonialIntervalRef.current);
     };
   }, [testimonials.length]);
 
@@ -166,8 +167,8 @@ export default function Index() {
 
   const AnimatedNumber = ({
     to,
-    prefix = '',
-    suffix = '',
+    prefix = "",
+    suffix = "",
     duration = 1500,
   }: {
     to: number;
@@ -1449,22 +1450,34 @@ export default function Index() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center divide-x divide-slate-200">
               <div className="px-6 py-4">
                 <AnimatedNumber to={1} suffix="B+" />
-                <div className="mt-2 text-sm text-slate-600">transactions processed</div>
+                <div className="mt-2 text-sm text-slate-600">
+                  transactions processed
+                </div>
               </div>
 
               <div className="px-6 py-4">
                 <AnimatedNumber to={100} prefix="$" suffix="B+" />
-                <div className="mt-2 text-sm text-slate-600">in value handled annually</div>
+                <div className="mt-2 text-sm text-slate-600">
+                  in value handled annually
+                </div>
               </div>
 
               <div className="px-6 py-4">
-                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">Millions</span>
-                <div className="mt-2 text-sm text-slate-600">of dollars saved in cost</div>
+                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                  Millions
+                </span>
+                <div className="mt-2 text-sm text-slate-600">
+                  of dollars saved in cost
+                </div>
               </div>
 
               <div className="px-6 py-4">
-                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">Zero</span>
-                <div className="mt-2 text-sm text-slate-600">Leakage guaranteed</div>
+                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                  Zero
+                </span>
+                <div className="mt-2 text-sm text-slate-600">
+                  Leakage guaranteed
+                </div>
               </div>
             </div>
           </div>
@@ -1473,7 +1486,9 @@ export default function Index() {
 
       <section id="clients" className="bg-white">
         <div className="container mx-auto py-10">
-          <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">Trusted By The Top Payment Aggregator & Gateways</h3>
+          <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">
+            Trusted By The Top Payment Aggregator & Gateways
+          </h3>
 
           <div className="flex items-center justify-center">
             <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -1483,12 +1498,42 @@ export default function Index() {
 
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center max-w-4xl w-full">
               {/* Use placeholder logos in public/placeholder.svg; replace src with real logos when available */}
-              <img src="/placeholder.svg" alt="PayU" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.05s forwards' }} />
-              <img src="/placeholder.svg" alt="Payswiff" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.10s forwards' }} />
-              <img src="/placeholder.svg" alt="Juspay" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.15s forwards' }} />
-              <img src="/placeholder.svg" alt="ezetap" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.20s forwards' }} />
-              <img src="/placeholder.svg" alt="magnati" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.25s forwards' }} />
-              <img src="/placeholder.svg" alt="Razorpay" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.30s forwards' }} />
+              <img
+                src="/placeholder.svg"
+                alt="PayU"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.05s forwards" }}
+              />
+              <img
+                src="/placeholder.svg"
+                alt="Payswiff"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.10s forwards" }}
+              />
+              <img
+                src="/placeholder.svg"
+                alt="Juspay"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.15s forwards" }}
+              />
+              <img
+                src="/placeholder.svg"
+                alt="ezetap"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.20s forwards" }}
+              />
+              <img
+                src="/placeholder.svg"
+                alt="magnati"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.25s forwards" }}
+              />
+              <img
+                src="/placeholder.svg"
+                alt="Razorpay"
+                className="logo-item mx-auto h-8 w-auto"
+                style={{ animation: "fadeUp 500ms ease 0.30s forwards" }}
+              />
             </div>
           </div>
         </div>
@@ -1512,23 +1557,38 @@ export default function Index() {
                       <div
                         key={idx}
                         className={`w-full transition-all duration-700 ease-[cubic-bezier(.2,.9,.3,1)] ${
-                          idx === currentTestimonial ? 'opacity-100 translate-y-0 block' : 'opacity-0 translate-y-4 pointer-events-none h-0 overflow-hidden'
+                          idx === currentTestimonial
+                            ? "opacity-100 translate-y-0 block"
+                            : "opacity-0 translate-y-4 pointer-events-none h-0 overflow-hidden"
                         }`}
                       >
                         <div className="rounded-2xl border-2 border-slate-200 bg-white p-10 md:p-12 shadow-[0_18px_30px_rgba(16,24,40,0.08)]">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                             <div>
-                              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">{t.quote.split(' ').slice(0,8).join(' ')}{t.quote.length>0 ? '...' : ''}</h3>
+                              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
+                                {t.quote.split(" ").slice(0, 8).join(" ")}
+                                {t.quote.length > 0 ? "..." : ""}
+                              </h3>
                             </div>
 
                             <div className="flex flex-col items-start md:items-end">
-                              <p className="text-sm md:text-base text-slate-600 leading-relaxed">{t.quote}</p>
+                              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                                {t.quote}
+                              </p>
 
                               <div className="mt-6 flex items-center gap-4">
-                                <img src={t.logo} alt={`${t.name} logo`} className="h-10 w-auto" />
+                                <img
+                                  src={t.logo}
+                                  alt={`${t.name} logo`}
+                                  className="h-10 w-auto"
+                                />
                                 <div className="text-left md:text-right">
-                                  <div className="text-sm font-semibold text-slate-900">{t.name}</div>
-                                  <div className="text-xs text-slate-500">{t.position}</div>
+                                  <div className="text-sm font-semibold text-slate-900">
+                                    {t.name}
+                                  </div>
+                                  <div className="text-xs text-slate-500">
+                                    {t.position}
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1545,7 +1605,7 @@ export default function Index() {
                     <button
                       key={i}
                       onClick={() => setCurrentTestimonial(i)}
-                      className={`h-2 w-8 rounded-full transition-all ${i === currentTestimonial ? 'bg-slate-800' : 'bg-slate-200'}`}
+                      className={`h-2 w-8 rounded-full transition-all ${i === currentTestimonial ? "bg-slate-800" : "bg-slate-200"}`}
                       aria-label={`Show testimonial ${i + 1}`}
                     />
                   ))}
@@ -1560,35 +1620,105 @@ export default function Index() {
         <div className="container mx-auto py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Who We Are</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+                Who We Are
+              </h2>
               <p className="mt-4 text-sm text-slate-600 max-w-xl">
-                Mylapay, an emerging startup in the fintech space, is incorporated as Minded Technologies and Services Pvt Ltd under the Companies Act 2013 and is registered with the Department for Promotion of Industry and Internal Trade's (DPIIT) Startup India initiative.
+                Mylapay, an emerging startup in the fintech space, is
+                incorporated as Minded Technologies and Services Pvt Ltd under
+                the Companies Act 2013 and is registered with the Department for
+                Promotion of Industry and Internal Trade's (DPIIT) Startup India
+                initiative.
               </p>
             </div>
 
             <div>
               <div className="flex flex-col gap-6">
                 <div className="text-center md:text-left">
-                  <div className="text-xs font-medium text-slate-700 mb-3">Backed by Prominent Investors</div>
+                  <div className="text-xs font-medium text-slate-700 mb-3">
+                    Backed by Prominent Investors
+                  </div>
                   <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-                    <img src="/placeholder.svg" alt="Investor 1" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.05s forwards'}} />
-                    <img src="/placeholder.svg" alt="Investor 2" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.10s forwards'}} />
-                    <img src="/placeholder.svg" alt="Investor 3" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.15s forwards'}} />
-                    <img src="/placeholder.svg" alt="Investor 4" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.20s forwards'}} />
-                    <img src="/placeholder.svg" alt="Investor 5" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.25s forwards'}} />
-                    <img src="/placeholder.svg" alt="Investor 6" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.30s forwards'}} />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 1"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.05s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 2"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.10s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 3"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.15s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 4"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.20s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 5"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.25s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Investor 6"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.30s forwards" }}
+                    />
                   </div>
                 </div>
 
                 <div className="text-center md:text-left">
-                  <div className="text-xs font-medium text-slate-700 mb-3">Backed by Prominent Investors</div>
+                  <div className="text-xs font-medium text-slate-700 mb-3">
+                    Backed by Prominent Investors
+                  </div>
                   <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-                    <img src="/placeholder.svg" alt="Badge 1" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.35s forwards'}} />
-                    <img src="/placeholder.svg" alt="Badge 2" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.40s forwards'}} />
-                    <img src="/placeholder.svg" alt="Badge 3" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.45s forwards'}} />
-                    <img src="/placeholder.svg" alt="Badge 4" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.50s forwards'}} />
-                    <img src="/placeholder.svg" alt="Badge 5" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.55s forwards'}} />
-                    <img src="/placeholder.svg" alt="Badge 6" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.60s forwards'}} />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 1"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.35s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 2"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.40s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 3"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.45s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 4"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.50s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 5"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.55s forwards" }}
+                    />
+                    <img
+                      src="/placeholder.svg"
+                      alt="Badge 6"
+                      className="mx-auto h-8 w-auto opacity-0"
+                      style={{ animation: "fadeUp 500ms ease 0.60s forwards" }}
+                    />
                   </div>
                 </div>
               </div>
