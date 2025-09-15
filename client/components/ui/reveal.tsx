@@ -70,6 +70,7 @@ export function Reveal({
         transitionProperty: "opacity, transform, filter",
         transitionDelay: `${delay}ms`,
       }}
+      {...rest}
     >
       {children}
     </Comp>
