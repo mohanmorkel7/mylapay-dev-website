@@ -1556,6 +1556,49 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="who" className="bg-white">
+        <div className="container mx-auto py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Who We Are</h2>
+              <p className="mt-4 text-sm text-slate-600 max-w-xl">
+                Mylapay, an emerging startup in the fintech space, is incorporated as Minded Technologies and Services Pvt Ltd under the Companies Act 2013 and is registered with the Department for Promotion of Industry and Internal Trade's (DPIIT) Startup India initiative.
+              </p>
+            </div>
+
+            <div>
+              <div className="flex flex-col gap-6">
+                <div className="text-center md:text-left">
+                  <div className="text-xs font-medium text-slate-700 mb-3">Backed by Prominent Investors</div>
+                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
+                    <img src="/placeholder.svg" alt="Investor 1" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.05s forwards'}} />
+                    <img src="/placeholder.svg" alt="Investor 2" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.10s forwards'}} />
+                    <img src="/placeholder.svg" alt="Investor 3" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.15s forwards'}} />
+                    <img src="/placeholder.svg" alt="Investor 4" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.20s forwards'}} />
+                    <img src="/placeholder.svg" alt="Investor 5" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.25s forwards'}} />
+                    <img src="/placeholder.svg" alt="Investor 6" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.30s forwards'}} />
+                  </div>
+                </div>
+
+                <div className="text-center md:text-left">
+                  <div className="text-xs font-medium text-slate-700 mb-3">Backed by Prominent Investors</div>
+                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
+                    <img src="/placeholder.svg" alt="Badge 1" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.35s forwards'}} />
+                    <img src="/placeholder.svg" alt="Badge 2" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.40s forwards'}} />
+                    <img src="/placeholder.svg" alt="Badge 3" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.45s forwards'}} />
+                    <img src="/placeholder.svg" alt="Badge 4" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.50s forwards'}} />
+                    <img src="/placeholder.svg" alt="Badge 5" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.55s forwards'}} />
+                    <img src="/placeholder.svg" alt="Badge 6" className="mx-auto h-8 w-auto opacity-0" style={{animation: 'fadeUp 500ms ease 0.60s forwards'}} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}`}</style>
+      </section>
+
       <section id="services" className="bg-background">
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
