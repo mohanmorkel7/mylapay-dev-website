@@ -1415,6 +1415,22 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="clients" className="bg-white">
+        <div className="container mx-auto py-10">
+          <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">Trusted By The Top Payment Aggregator & Gateways</h3>
+
+          <div className="flex items-center justify-center">
+            <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}`}</style>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F91479cba957c42c69ed0dfa3a0d0993e?format=webp&width=800"
+              alt="Trusted partners"
+              className="max-w-3xl w-full h-auto opacity-0"
+              style={{ animation: 'fadeUp 800ms ease 0.12s forwards' }}
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="services" className="bg-background">
         <div className="container mx-auto py-24 md:py-32 text-foreground">
           <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
