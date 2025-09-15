@@ -843,7 +843,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">Mylapay TokenX</h3>
                   <p className="mt-1 text-sm text-white/90">Card Tokenization - COF & Alt ID</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Encrypt | Process | Tokenize</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Encrypt | Process | Tokenize</p>
                 </div>
               </div>
 
@@ -864,7 +864,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">Mylapay Secure</h3>
                   <p className="mt-1 text-sm text-white/90">3DS Server certified by EMVCo</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Detect | Prevent | Authenticate</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Detect | Prevent | Authenticate</p>
                 </div>
               </div>
 
@@ -885,7 +885,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">Mylapay C-Switch</h3>
                   <p className="mt-1 text-sm text-white/90">Base I Auth Switch for Card Payments</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Integrate | Transact | Authorize</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Integrate | Transact | Authorize</p>
                 </div>
               </div>
 
@@ -905,7 +905,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">IntelleWatch</h3>
                   <p className="mt-1 text-sm text-white/90">Fraud Risk Management (FRM) System</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Monitor | Block | Safeguard</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Monitor | Block | Safeguard</p>
                 </div>
               </div>
 
@@ -925,7 +925,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">IntelleSettle</h3>
                   <p className="mt-1 text-sm text-white/90">Base II Clearing & Settlement System</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Submit | Collect | Settle</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Submit | Collect | Settle</p>
                 </div>
               </div>
 
@@ -945,7 +945,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">IntelleSolve</h3>
                   <p className="mt-1 text-sm text-white/90">Chargeback Management System</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Defend | Resolve | Recover</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Defend | Resolve | Recover</p>
                 </div>
               </div>
 
@@ -965,7 +965,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">Intelle360</h3>
                   <p className="mt-1 text-sm text-white/90">Analytics Suite for Acquiring Payments</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Intelligence | Protection | Growth</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Intelligence | Protection | Growth</p>
                 </div>
               </div>
 
@@ -981,7 +981,7 @@ export default function Index() {
                   <div>
                     <h3 className="text-lg font-semibold text-white">Mylapay U-Switch</h3>
                     <p className="mt-1 text-sm text-white/90">UPI Switch for PSPs, Beneficiary Banks</p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Connect | Route | Approve</p>
+                    <p className="mt-2 text-xs text-[#219dd2] font-medium">Connect | Route | Approve</p>
                   </div>
                 </div>
               </div>
@@ -1002,7 +1002,7 @@ export default function Index() {
 
                   <h3 className="text-lg font-semibold">IntellePro</h3>
                   <p className="mt-1 text-sm text-white/90">Real-time TMS for UPI Transactions</p>
-                  <p className="mt-2 text-xs text-white/80 font-medium">Reconcile | Settle | Recover</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Reconcile | Settle | Recover</p>
                 </div>
               </div>
             </div>
