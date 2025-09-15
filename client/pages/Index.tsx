@@ -919,10 +919,10 @@ export default function Index() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* 1 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                   aria-hidden
                 >
                   <svg
@@ -988,10 +988,10 @@ export default function Index() {
               </div>
 
               {/* 2 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1049,10 +1049,10 @@ export default function Index() {
               </div>
 
               {/* 3 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1110,10 +1110,10 @@ export default function Index() {
               </div>
 
               {/* 4 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1166,10 +1166,10 @@ export default function Index() {
               </div>
 
               {/* 5 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1221,10 +1221,10 @@ export default function Index() {
               </div>
 
               {/* 6 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1276,10 +1276,10 @@ export default function Index() {
               </div>
 
               {/* 7 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1331,10 +1331,10 @@ export default function Index() {
               </div>
 
               {/* 8 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
@@ -1386,10 +1386,10 @@ export default function Index() {
               </div>
 
               {/* 9 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1" role="link" tabIndex={0} onClick={() => (window.location.href = '#')} onKeyDown={(e) => { if ((e as any).key === 'Enter') window.location.href = '#'; }} style={{ cursor: 'pointer' }}>                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#1b355f] to-[#219dd2] opacity-0 group-hover:opacity-80 transition-opacity duration-300 pointer-events-none"></div>
                 <a
                   href="#"
-                  className="absolute top-4 right-4 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
+                  className="absolute top-3 right-3 relative z-20 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]"
                 >
                   <svg
                     className="h-5 w-5"
