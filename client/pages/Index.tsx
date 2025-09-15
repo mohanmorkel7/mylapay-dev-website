@@ -970,19 +970,22 @@ export default function Index() {
               </div>
 
               {/* 8 */}
-              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                      <path d="M12 2l4 4-4 4-4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
-                    </svg>
-                  </div>
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white group relative overflow-hidden">
+                <a href="#" className="absolute top-4 right-4 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all text-[#219dd2]">
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 19V6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M5 12l7-7 7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </a>
 
-                  <div>
-                    <h3 className="text-lg font-semibold text-white">Mylapay U-Switch</h3>
-                    <p className="mt-1 text-sm text-white/90">UPI Switch for PSPs, Beneficiary Banks</p>
-                    <p className="mt-2 text-xs text-[#219dd2] font-medium">Connect | Route | Approve</p>
-                  </div>
+                <div className="flex flex-col items-start">
+                  <svg className="h-8 w-8 text-white mb-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                    <path d="M12 2l4 4-4 4-4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
+                  </svg>
+
+                  <h3 className="text-lg font-semibold">Mylapay U-Switch</h3>
+                  <p className="mt-1 text-sm text-white/90">UPI Switch for PSPs, Beneficiary Banks</p>
+                  <p className="mt-2 text-xs text-[#219dd2] font-medium">Connect | Route | Approve</p>
                 </div>
               </div>
 
