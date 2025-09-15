@@ -824,7 +824,7 @@ export default function Index() {
           </h2>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Card 1 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
@@ -993,7 +993,7 @@ export default function Index() {
             </div>
 
             {/* second row of 4 for desktop or stacked on smaller screens */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
