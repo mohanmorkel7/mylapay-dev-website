@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Reveal from "@/components/ui/reveal";
 import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
@@ -226,27 +227,31 @@ export default function Index() {
         </div>
 
         <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
-          <h1
+          <Reveal
+            as="h1"
             id="hero-heading"
+            variant="scale"
+            duration={800}
+            delay={0}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
           >
             Powering the
             <br />
             Future of Payments
-          </h1>
+          </Reveal>
 
-          <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
+          <Reveal as="p" variant="scale" duration={800} delay={100} className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
             Fast, secure payment infrastructure for modern businesses.
-          </p>
+          </Reveal>
 
-          <div className="mt-8 flex items-center gap-4">
+          <Reveal as="div" variant="scale" duration={800} delay={200} className="mt-8 flex items-center gap-4">
             <a
               href="#"
               className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:shadow-lg transition"
             >
               Integrate with us
             </a>
-          </div>
+          </Reveal>
         </div>
 
         {/* Play overlay if autoplay blocked */}
@@ -267,27 +272,27 @@ export default function Index() {
       </section>
 
       {/* Content sections for anchors */}
-      <section id="about" className="bg-background/70 backdrop-blur-sm">
+      <section id="about" className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24">
         <div className="container mx-auto py-24 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="pl-6 md:pl-20">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
+              <Reveal as="h2" variant="scale" delay={0} className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
                 The Next-Gen
                 <br />
                 Payment Company
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
+              </Reveal>
+              <Reveal as="p" variant="scale" delay={100} className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
                 A Smart payment infrastructure
-              </p>
+              </Reveal>
 
-              <div className="mt-6 flex items-start gap-3">
+              <Reveal as="div" variant="scale" delay={200} className="mt-6 flex items-start gap-3">
                 <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">
                   Designed in India
                 </span>
                 <span className="inline-block bg-slate-800 text-white px-3 py-1 rounded-md text-sm">
                   Delivered Globally
                 </span>
-              </div>
+              </Reveal>
             </div>
 
             <div className="flex flex-col items-start justify-center gap-6 pl-6 md:pl-28">
@@ -374,7 +379,7 @@ export default function Index() {
       {/* Global map section */}
       <section
         id="global-map"
-        className="relative bg-background py-6 md:py-8 overflow-hidden"
+        className="relative bg-background py-6 md:py-8 overflow-hidden scroll-mt-20 md:scroll-mt-24"
       >
         <div className="container relative mx-auto">
           <div className="mx-auto max-w-6xl">
@@ -403,7 +408,7 @@ export default function Index() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
-                  <h2 className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                  <Reveal as="h2" variant="scale" delay={0} className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
                     A Unified Global
                     <br />
                     Payment Processing Solution
@@ -411,11 +416,11 @@ export default function Index() {
                     for Acquirers - Banks and
                     <br />
                     Payment Aggregators
-                  </h2>
+                  </Reveal>
 
-                  <p className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold">
+                  <Reveal as="p" variant="scale" delay={150} className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold">
                     Supports POS and E-com payments for
-                  </p>
+                  </Reveal>
 
                   <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 sm:gap-12">
                     <div className="flex items-center gap-3 text-sm sm:text-base md:text-lg text-slate-900">
@@ -550,7 +555,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="carousel" className="bg-background">
+      <section id="carousel" className="bg-background scroll-mt-20 md:scroll-mt-24">
         <div className="container mx-auto py-12 md:py-16">
           <div className="max-w-6xl mx-auto">
             <div className="relative">
@@ -770,7 +775,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="scale" className="bg-background">
+      <section id="scale" className="bg-background scroll-mt-20 md:scroll-mt-24">
         <div className="container mx-auto py-8 md:py-12 text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Built for Scale, Engineered for
@@ -781,7 +786,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="features" className="bg-background">
+      <section id="features" className="bg-background scroll-mt-20 md:scroll-mt-24">
         <div className="w-full border-t border-b border-slate-300">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
@@ -910,7 +915,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="products" className="bg-[#202c5c]">
+      <section id="products" className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24">
         <div className="container mx-auto py-12 md:py-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
