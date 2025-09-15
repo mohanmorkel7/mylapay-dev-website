@@ -1441,28 +1441,31 @@ export default function Index() {
       <section id="testimonials" className="bg-white">
         <div className="container mx-auto py-12 md:py-16">
           <div className="flex justify-center">
-            <div className="relative w-full max-w-4xl">
-              {/* decorative shadow */}
-              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-[92%] h-6 bg-white rounded-xl filter blur-xl opacity-40"></div>
+            <div className="relative w-full max-w-5xl">
+              {/* decorative shadow under the card */}
+              <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-[94%] h-6 bg-white rounded-xl filter blur-2xl opacity-40"></div>
 
-              <div className="relative rounded-2xl border border-slate-100 bg-white p-8 md:p-12">
-                <div className="md:flex md:items-start md:gap-8">
-                  <div className="md:w-2/3">
-                    <h3 className="text-xl md:text-2xl font-semibold text-slate-900">Unveil Client Experiences – Hear why they love us!</h3>
-                    <p className="mt-4 text-sm md:text-base text-slate-600 leading-relaxed">We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership. Thank you for always being available and assisting us with our inquiries. Your dedication is greatly appreciated, and we wish you continued success.</p>
+              <div className="relative rounded-2xl border-2 border-slate-200 bg-white p-10 md:p-12 shadow-[0_18px_30px_rgba(16,24,40,0.08)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                  {/* Left: Title */}
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">Unveil Client Experiences – Hear why they love us!</h3>
                   </div>
 
-                  <div className="mt-6 md:mt-0 md:w-1/3 flex flex-col items-start md:items-end justify-between">
-                    <div className="hidden md:block">
-                      <img src="/placeholder.svg" alt="Razorpay logo" className="h-10 w-auto mb-4" />
-                    </div>
+                  {/* Right: description + logo/name */}
+                  <div className="flex flex-col items-start md:items-end">
+                    <p className="text-sm md:text-base text-slate-600 leading-relaxed">We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership. Thank you for always being available and assisting us with our inquiries. Your dedication is greatly appreciated, and we wish you continued success.</p>
 
-                    <div className="mt-4 md:mt-0 text-left md:text-right">
-                      <div className="text-sm font-semibold text-slate-900">Chetan Nagaraju</div>
-                      <div className="text-xs text-slate-500">Senior Director Business Finance</div>
+                    <div className="mt-6 flex items-center gap-4">
+                      <img src="/placeholder.svg" alt="Razorpay logo" className="h-10 w-auto" />
+                      <div className="text-left md:text-right">
+                        <div className="text-sm font-semibold text-slate-900">Chetan Nagaraju</div>
+                        <div className="text-xs text-slate-500">Senior Director Business Finance</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
