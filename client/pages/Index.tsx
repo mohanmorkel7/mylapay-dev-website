@@ -817,18 +817,18 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="products" className="bg-secondary">
+      <section id="products" className="bg-[#202c5c]">
         <div className="container mx-auto py-12 md:py-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-slate-900 mb-8">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
           </h2>
 
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* 1 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M3 11h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                       <path d="M6 11v6h3v-4h6v4h3v-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -837,17 +837,17 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Mylapay TokenX</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Card Tokenization - COF & Alt ID</p>
+                    <h3 className="text-lg font-semibold text-white">Mylapay TokenX</h3>
+                    <p className="mt-1 text-sm text-white/90">Card Tokenization - COF & Alt ID</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Encrypt | Process | Tokenize</p>
                   </div>
                 </div>
               </div>
 
               {/* 2 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                       <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -855,17 +855,17 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Mylapay Secure</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">3DS Server certified by EMVCo</p>
+                    <h3 className="text-lg font-semibold text-white">Mylapay Secure</h3>
+                    <p className="mt-1 text-sm text-white/90">3DS Server certified by EMVCo</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Detect | Prevent | Authenticate</p>
                   </div>
                 </div>
               </div>
 
               {/* 3 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M4 7h16v10H4z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                       <path d="M8 11h8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
@@ -873,110 +873,110 @@ export default function Index() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Mylapay C-Switch</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Base I Auth Switch for Card Payments</p>
+                    <h3 className="text-lg font-semibold text-white">Mylapay C-Switch</h3>
+                    <p className="mt-1 text-sm text-white/90">Base I Auth Switch for Card Payments</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Integrate | Transact | Authorize</p>
                   </div>
                 </div>
               </div>
 
               {/* 4 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M12 2v4M12 18v4M4 12h4M16 12h4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">IntelleWatch</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Fraud Risk Management (FRM) System</p>
+                    <h3 className="text-lg font-semibold text-white">IntelleWatch</h3>
+                    <p className="mt-1 text-sm text-white/90">Fraud Risk Management (FRM) System</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Monitor | Block | Safeguard</p>
                   </div>
                 </div>
               </div>
 
               {/* 5 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M3 7h18v10H3z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">IntelleSettle</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Base II Clearing & Settlement System</p>
+                    <h3 className="text-lg font-semibold text-white">IntelleSettle</h3>
+                    <p className="mt-1 text-sm text-white/90">Base II Clearing & Settlement System</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Submit | Collect | Settle</p>
                   </div>
                 </div>
               </div>
 
               {/* 6 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M4 7h16v10H4z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">IntelleSolve</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Chargeback Management System</p>
+                    <h3 className="text-lg font-semibold text-white">IntelleSolve</h3>
+                    <p className="mt-1 text-sm text-white/90">Chargeback Management System</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Defend | Resolve | Recover</p>
                   </div>
                 </div>
               </div>
 
               {/* 7 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M3 7h18v10H3z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Intelle360</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Analytics Suite for Acquiring Payments</p>
+                    <h3 className="text-lg font-semibold text-white">Intelle360</h3>
+                    <p className="mt-1 text-sm text-white/90">Analytics Suite for Acquiring Payments</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Intelligence | Protection | Growth</p>
                   </div>
                 </div>
               </div>
 
               {/* 8 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M12 2l4 4-4 4-4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">Mylapay U-Switch</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">UPI Switch for PSPs, Beneficiary Banks</p>
+                    <h3 className="text-lg font-semibold text-white">Mylapay U-Switch</h3>
+                    <p className="mt-1 text-sm text-white/90">UPI Switch for PSPs, Beneficiary Banks</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Connect | Route | Approve</p>
                   </div>
                 </div>
               </div>
 
               {/* 9 */}
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+              <div className="rounded-lg border border-[#219dd2] bg-[#202c5c] p-6 text-white">
                 <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                  <div className="flex-shrink-0 text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                       <path d="M12 2l4 4 4 4-4 4-4 4-4-4-4-4 4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">IntellePro</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">Real-time TMS for UPI Transactions</p>
+                    <h3 className="text-lg font-semibold text-white">IntellePro</h3>
+                    <p className="mt-1 text-sm text-white/90">Real-time TMS for UPI Transactions</p>
                     <p className="mt-2 text-xs text-[#2caee4] font-medium">Reconcile | Settle | Recover</p>
                   </div>
                 </div>
