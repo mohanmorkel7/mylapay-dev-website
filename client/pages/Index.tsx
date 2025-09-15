@@ -1506,16 +1506,16 @@ export default function Index() {
                 onMouseEnter={pauseTestimonials}
                 onMouseLeave={resumeTestimonials}
               >
-                <div className="overflow-hidden">
+                <div className="overflow-hidden min-h-[220px]">
                   <div className="relative h-auto">
                     {testimonials.map((t, idx) => (
                       <div
                         key={idx}
-                        className={`absolute inset-0 transition-all duration-700 ease-[cubic-bezier(.2,.9,.3,1)] ${
-                          idx === currentTestimonial ? 'opacity-100 translate-y-0 z-10' : 'opacity-0 translate-y-4 z-0'
+                        className={`w-full transition-all duration-700 ease-[cubic-bezier(.2,.9,.3,1)] ${
+                          idx === currentTestimonial ? 'opacity-100 translate-y-0 block' : 'opacity-0 translate-y-4 pointer-events-none h-0 overflow-hidden'
                         }`}
                       >
-                        <div className="relative rounded-2xl border-2 border-slate-200 bg-white p-10 md:p-12 shadow-[0_18px_30px_rgba(16,24,40,0.08)]">
+                        <div className="rounded-2xl border-2 border-slate-200 bg-white p-10 md:p-12 shadow-[0_18px_30px_rgba(16,24,40,0.08)]">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                             <div>
                               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">{t.quote.split(' ').slice(0,8).join(' ')}{t.quote.length>0 ? '...' : ''}</h3>
