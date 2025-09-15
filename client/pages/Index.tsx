@@ -270,7 +270,7 @@ export default function Index() {
       <section id="about" className="bg-background/70 backdrop-blur-sm">
         <div className="container mx-auto py-24 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="pl-20">
+            <div className="pl-6 md:pl-20">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
                 The Next-Gen
                 <br />
@@ -290,7 +290,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-6 pl-28">
+            <div className="flex flex-col items-start justify-center gap-6 pl-6 md:pl-28">
               <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
