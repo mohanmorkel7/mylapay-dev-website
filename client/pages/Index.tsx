@@ -1666,42 +1666,6 @@ export default function Index() {
         <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}`}</style>
       </section>
 
-      <section id="services" className="bg-background">
-        <div className="container mx-auto py-24 md:py-32 text-foreground">
-          <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
-          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold">Design</h3>
-              <p className="mt-2 text-muted-foreground">
-                Branding, UI/UX, and prototypes.
-              </p>
-            </li>
-            <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold">Development</h3>
-              <p className="mt-2 text-muted-foreground">
-                Web apps, sites, and integrations.
-              </p>
-            </li>
-            <li className="rounded-xl border bg-card/70 p-6 backdrop-blur-sm transition hover:shadow-xl">
-              <h3 className="text-xl font-semibold">Performance</h3>
-              <p className="mt-2 text-muted-foreground">
-                Optimization and SEO best practices.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto py-24 md:py-32 text-foreground">
-          <h2 className="text-3xl md:text-4xl font-bold">Contact</h2>
-          <p className="mt-4 max-w-2xl text-muted-foreground">
-            Ready to start? Email us at hello@example.com and well be in
-            touch.
-          </p>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-[#05060a] text-white">
         <div className="container mx-auto py-14">
