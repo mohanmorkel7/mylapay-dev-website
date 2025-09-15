@@ -825,307 +825,159 @@ export default function Index() {
 
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Card 1 */}
+              {/* 1 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M3 11h18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M6 11v6h3v-4h6v4h3v-6"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M12 3v4"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M3 11h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                      <path d="M6 11v6h3v-4h6v4h3v-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M12 3v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      Mylapay TokenX
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Card Tokenization - COF & Alt ID
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Encrypt | Process | Tokenize
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">Mylapay TokenX</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Card Tokenization - COF & Alt ID</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Encrypt | Process | Tokenize</p>
                   </div>
                 </div>
               </div>
 
-              {/* Card 2 */}
+              {/* 2 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M12 3v18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M3 12h18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                      <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      Mylapay Secure
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      3DS Server certified by EMVCo
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Detect | Prevent | Authenticate
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">Mylapay Secure</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">3DS Server certified by EMVCo</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Detect | Prevent | Authenticate</p>
                   </div>
                 </div>
               </div>
 
-              {/* Card 3 */}
+              {/* 3 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M4 7h16v10H4z"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        fill="none"
-                      />
-                      <path
-                        d="M8 11h8"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M4 7h16v10H4z" stroke="currentColor" strokeWidth="1.6" fill="none" />
+                      <path d="M8 11h8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      Mylapay C-Switch
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Base I Auth Switch for Card Payments
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Integrate | Transact | Authorize
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">Mylapay C-Switch</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Base I Auth Switch for Card Payments</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Integrate | Transact | Authorize</p>
                   </div>
                 </div>
               </div>
 
-              {/* Card 4 */}
+              {/* 4 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M12 2v4M12 18v4M4 12h4M16 12h4"
-                        stroke="currentColor"
-                        strokeWidth="1.4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M12 2v4M12 18v4M4 12h4M16 12h4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      IntelleWatch
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Fraud Risk Management (FRM) System
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Monitor | Block | Safeguard
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* second row of 4 for desktop or stacked on smaller screens */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
-                <div className="flex items-start gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M3 7h18v10H3z"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      IntelleSettle
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Base II Clearing & Settlement System
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Submit | Collect | Settle
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">IntelleWatch</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Fraud Risk Management (FRM) System</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Monitor | Block | Safeguard</p>
                   </div>
                 </div>
               </div>
 
+              {/* 5 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M4 7h16v10H4z"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        fill="none"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M3 7h18v10H3z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      IntelleSolve
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Chargeback Management System
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Defend | Resolve | Recover
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">IntelleSettle</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Base II Clearing & Settlement System</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Submit | Collect | Settle</p>
                   </div>
                 </div>
               </div>
 
+              {/* 6 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M3 7h18v10H3z"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        fill="none"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M4 7h16v10H4z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      Intelle360
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      Analytics Suite for Acquiring Payments
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Intelligence | Protection | Growth
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">IntelleSolve</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Chargeback Management System</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Defend | Resolve | Recover</p>
                   </div>
                 </div>
               </div>
 
+              {/* 7 */}
               <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
                 <div className="flex items-start gap-4">
                   <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <path
-                        d="M12 2l4 4-4 4-4-4 4-4z"
-                        stroke="currentColor"
-                        strokeWidth="1.4"
-                        fill="none"
-                      />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M3 7h18v10H3z" stroke="currentColor" strokeWidth="1.6" fill="none" />
                     </svg>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      Mylapay U-Switch
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      UPI Switch for PSPs, Beneficiary Banks
-                    </p>
-                    <p className="mt-2 text-xs text-[#2caee4] font-medium">
-                      Connect | Route | Approve
-                    </p>
+                    <h3 className="text-lg font-semibold text-slate-900">Intelle360</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Analytics Suite for Acquiring Payments</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Intelligence | Protection | Growth</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 8 */}
+              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+                <div className="flex items-start gap-4">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M12 2l4 4-4 4-4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900">Mylapay U-Switch</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">UPI Switch for PSPs, Beneficiary Banks</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Connect | Route | Approve</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 9 */}
+              <div className="rounded-lg border border-slate-300 bg-white/90 p-6 shadow-sm hover:shadow-md transition text-left">
+                <div className="flex items-start gap-4">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-[#e6f7fb] text-[#2caee4]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                      <path d="M12 2l4 4 4 4-4 4-4 4-4-4-4-4 4-4 4-4z" stroke="currentColor" strokeWidth="1.4" fill="none" />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900">IntellePro</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Real-time TMS for UPI Transactions</p>
+                    <p className="mt-2 text-xs text-[#2caee4] font-medium">Reconcile | Settle | Recover</p>
                   </div>
                 </div>
               </div>
