@@ -1420,13 +1420,20 @@ export default function Index() {
           <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">Trusted By The Top Payment Aggregator & Gateways</h3>
 
           <div className="flex items-center justify-center">
-            <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}`}</style>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F91479cba957c42c69ed0dfa3a0d0993e?format=webp&width=800"
-              alt="Trusted partners"
-              className="max-w-3xl w-full h-auto opacity-0"
-              style={{ animation: 'fadeUp 800ms ease 0.12s forwards' }}
-            />
+            <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+            .logo-item{opacity:0;transform:translateY(12px);}
+            .logo-item.show{opacity:1;transform:translateY(0);}
+            `}</style>
+
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center max-w-4xl w-full">
+              {/* Use placeholder logos in public/placeholder.svg; replace src with real logos when available */}
+              <img src="/placeholder.svg" alt="PayU" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.05s forwards' }} />
+              <img src="/placeholder.svg" alt="Payswiff" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.10s forwards' }} />
+              <img src="/placeholder.svg" alt="Juspay" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.15s forwards' }} />
+              <img src="/placeholder.svg" alt="ezetap" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.20s forwards' }} />
+              <img src="/placeholder.svg" alt="magnati" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.25s forwards' }} />
+              <img src="/placeholder.svg" alt="Razorpay" className="logo-item mx-auto h-8 w-auto" style={{ animation: 'fadeUp 500ms ease 0.30s forwards' }} />
+            </div>
           </div>
         </div>
       </section>
