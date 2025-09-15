@@ -1607,13 +1607,13 @@ export default function Index() {
                 style={{ animation: "fadeUp 500ms ease 0.15s forwards" }}
               />
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Fc47d972a25bc4f20bf77fe0ff496cefa?format=webp&width=800"
                 alt="ezetap"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.20s forwards" }}
               />
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Ff258e7d58915474c8ef8c8dab8d1f923?format=webp&width=800"
                 alt="magnati"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.25s forwards" }}
