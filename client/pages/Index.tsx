@@ -108,6 +108,42 @@ export default function Index() {
     }
   };
 
+  const AnimatedNumber = ({
+    to,
+    prefix = '',
+    suffix = '',
+    duration = 1500,
+  }: {
+    to: number;
+    prefix?: string;
+    suffix?: string;
+    duration?: number;
+  }) => {
+    const [value, setValue] = useState(0);
+    useEffect(() => {
+      let startTime: number | null = null;
+      const step = (timestamp: number) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const current = Math.floor(progress * to);
+        setValue(current);
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+      return () => {
+        startTime = null;
+      };
+    }, [to, duration]);
+
+    return (
+      <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">
+        {prefix}
+        {value}
+        {suffix}
+      </span>
+    );
+  };
+
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
       {/* Hero content (video plays only in this section) */}
@@ -1345,6 +1381,34 @@ export default function Index() {
                     Reconcile | Settle | Recover
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="counters" className="bg-white">
+        <div className="container mx-auto py-6 md:py-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center divide-x divide-slate-200">
+              <div className="px-6 py-4">
+                <AnimatedNumber to={1} suffix="B+" />
+                <div className="mt-2 text-sm text-slate-600">transactions processed</div>
+              </div>
+
+              <div className="px-6 py-4">
+                <AnimatedNumber to={100} prefix="$" suffix="B+" />
+                <div className="mt-2 text-sm text-slate-600">in value handled annually</div>
+              </div>
+
+              <div className="px-6 py-4">
+                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">Millions</span>
+                <div className="mt-2 text-sm text-slate-600">of dollars saved in cost</div>
+              </div>
+
+              <div className="px-6 py-4">
+                <span className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900">Zero</span>
+                <div className="mt-2 text-sm text-slate-600">Leakage guaranteed</div>
               </div>
             </div>
           </div>
