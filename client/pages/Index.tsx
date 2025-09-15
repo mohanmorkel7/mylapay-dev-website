@@ -948,7 +948,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1016,7 +1016,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1077,7 +1077,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1138,7 +1138,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1194,7 +1194,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1249,7 +1249,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1304,7 +1304,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1359,7 +1359,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
@@ -1414,7 +1414,7 @@ export default function Index() {
                   </svg>
                 </a>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start relative z-10">
                   <svg
                     className="h-8 w-8 text-white mb-3"
                     viewBox="0 0 24 24"
