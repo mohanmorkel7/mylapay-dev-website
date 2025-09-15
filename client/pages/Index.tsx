@@ -390,20 +390,20 @@ export default function Index() {
                     backgroundSize: "6px 6px",
                     WebkitMaskImage:
                       "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    WebkitMaskSize: "100% 100%",
-                    WebkitMaskPosition: "center",
+                    WebkitMaskSize: "cover",
+                    WebkitMaskPosition: "center center",
                     WebkitMaskRepeat: "no-repeat",
                     maskImage:
                       "url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')",
-                    maskSize: "100% 100%",
-                    maskPosition: "center",
+                    maskSize: "cover",
+                    maskPosition: "center center",
                     maskRepeat: "no-repeat",
                     opacity: 0.98,
                   }}
                 />
 
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
-                  <h2 className="max-w-3xl text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                  <h2 className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
                     A Unified Global
                     <br />
                     Payment Processing Solution
@@ -417,9 +417,9 @@ export default function Index() {
                     Supports POS and E-com payments for
                   </p>
 
-                  <div className="mt-4 flex items-center gap-12">
-                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
-                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                  <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 sm:gap-12">
+                    <div className="flex items-center gap-3 text-sm sm:text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center text-[#2caee4]">
                         <svg
                           width="20"
                           height="14"
@@ -453,8 +453,8 @@ export default function Index() {
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
-                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                    <div className="flex items-center gap-3 text-sm sm:text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center text-[#2caee4]">
                         <svg
                           width="18"
                           height="18"
@@ -478,8 +478,8 @@ export default function Index() {
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-3 text-base md:text-lg text-slate-900">
-                      <span className="inline-flex h-6 w-6 items-center justify-center text-[#2caee4]">
+                    <div className="flex items-center gap-3 text-sm sm:text-base md:text-lg text-slate-900">
+                      <span className="inline-flex h-5 w-5 sm:h-6 sm:w-6 items-center justify-center text-[#2caee4]">
                         <svg
                           width="18"
                           height="18"
