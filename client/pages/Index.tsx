@@ -115,7 +115,7 @@ export default function Index() {
         "We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership.",
       name: "Chetan Nagaraju",
       position: "Senior Director Business Finance",
-      logo: "/placeholder.svg",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F1626d4980a484a2ba75331b950dee58a?format=webp&width=800",
     },
     {
       quote:
@@ -1619,7 +1619,7 @@ export default function Index() {
                 style={{ animation: "fadeUp 500ms ease 0.25s forwards" }}
               />
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F1626d4980a484a2ba75331b950dee58a?format=webp&width=800"
                 alt="Razorpay"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.30s forwards" }}
