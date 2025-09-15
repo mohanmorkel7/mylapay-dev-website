@@ -108,6 +108,62 @@ export default function Index() {
     }
   };
 
+  // Testimonials data and carousel control
+  const testimonials = [
+    {
+      quote:
+        "We want to express our sincere gratitude for our partnership. Your module has provided us with valuable and practical insights into our business, and we look forward to further strengthening our partnership.",
+      name: "Chetan Nagaraju",
+      position: "Senior Director Business Finance",
+      logo: "/placeholder.svg",
+    },
+    {
+      quote:
+        "Their team helped us integrate quickly and provided responsive support. Transactions are processed reliably and reporting is clear. We consider them a key partner in our growth.",
+      name: "Nisha Patel",
+      position: "Head of Payments",
+      logo: "/placeholder.svg",
+    },
+    {
+      quote:
+        "By optimizing routing and reconciliation, we reduced costs and improved success rates. Their analytics gave us actionable insights that drove measurable results.",
+      name: "Rajat Singh",
+      position: "VP, Operations",
+      logo: "/placeholder.svg",
+    },
+  ];
+
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const testimonialIntervalRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const start = () => {
+      testimonialIntervalRef.current = window.setInterval(() => {
+        setCurrentTestimonial((i) => (i + 1) % testimonials.length);
+      }, 6000);
+    };
+
+    start();
+    return () => {
+      if (testimonialIntervalRef.current) window.clearInterval(testimonialIntervalRef.current);
+    };
+  }, [testimonials.length]);
+
+  const pauseTestimonials = () => {
+    if (testimonialIntervalRef.current) {
+      window.clearInterval(testimonialIntervalRef.current);
+      testimonialIntervalRef.current = null;
+    }
+  };
+
+  const resumeTestimonials = () => {
+    if (!testimonialIntervalRef.current) {
+      testimonialIntervalRef.current = window.setInterval(() => {
+        setCurrentTestimonial((i) => (i + 1) % testimonials.length);
+      }, 6000);
+    }
+  };
+
   const AnimatedNumber = ({
     to,
     prefix = '',
