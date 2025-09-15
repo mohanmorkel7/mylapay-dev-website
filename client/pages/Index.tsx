@@ -1589,19 +1589,19 @@ export default function Index() {
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center max-w-4xl w-full">
               {/* Use placeholder logos in public/placeholder.svg; replace src with real logos when available */}
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2Fb148ff70afea41c9be7f8de2dbd7aee9?format=webp&width=800"
                 alt="PayU"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.05s forwards" }}
               />
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F3bd2056d6a8c442a8aa1699de170a1ba?format=webp&width=800"
                 alt="Payswiff"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.10s forwards" }}
               />
               <img
-                src="/placeholder.svg"
+                src="https://cdn.builder.io/api/v1/image/assets%2F2267678df3644282aa24593b357b4ca2%2F4575d02a18f94f56b5766301b38ddcfa?format=webp&width=800"
                 alt="Juspay"
                 className="logo-item mx-auto h-8 w-auto"
                 style={{ animation: "fadeUp 500ms ease 0.15s forwards" }}
