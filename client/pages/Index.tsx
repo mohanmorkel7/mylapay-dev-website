@@ -1618,108 +1618,45 @@ export default function Index() {
 
       <section id="who" className="bg-white">
         <div className="container mx-auto py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                Who We Are
-              </h2>
-              <p className="mt-4 text-sm text-slate-600 max-w-xl">
-                Mylapay, an emerging startup in the fintech space, is
-                incorporated as Minded Technologies and Services Pvt Ltd under
-                the Companies Act 2013 and is registered with the Department for
-                Promotion of Industry and Internal Trade's (DPIIT) Startup India
-                initiative.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div className="pr-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Who We Are</h2>
+              <p className="mt-3 text-base text-slate-700 max-w-xl leading-relaxed">
+                Mylapay is an emerging fintech startup (Minded Technologies & Services Pvt Ltd), focused on secure payments, tokenization, and intelligent routing. We partner with banks, PSPs and aggregators to deliver high performance payment infrastructure and fraud protection.
               </p>
+
+              <div className="mt-6 flex items-center gap-4">
+                <div className="text-sm text-slate-600">Founded</div>
+                <div className="font-semibold">2019</div>
+
+                <div className="ml-6 text-sm text-slate-600">Headquarters</div>
+                <div className="font-semibold">Bengaluru</div>
+              </div>
+
+              <div className="mt-6">
+                <a href="#contact" className="inline-block rounded-md bg-[#202c5c] px-4 py-2 text-white font-medium hover:bg-[#192247]">Contact Sales</a>
+              </div>
             </div>
 
             <div>
-              <div className="flex flex-col gap-6">
-                <div className="text-center md:text-left">
-                  <div className="text-xs font-medium text-slate-700 mb-3">
-                    Backed by Prominent Investors
-                  </div>
-                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 1"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.05s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 2"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.10s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 3"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.15s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 4"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.20s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 5"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.25s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Investor 6"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.30s forwards" }}
-                    />
-                  </div>
+              <div className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <div className="text-xs font-medium text-slate-700 mb-4">Backed by Prominent Investors</div>
+
+                <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 items-center">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="flex items-center justify-center h-12 rounded-md bg-white/80 border border-slate-100 hover:shadow-md transition">
+                      <img src="/placeholder.svg" alt={`Investor ${i + 1}`} className="h-6 w-auto grayscale opacity-90 hover:grayscale-0 transition" />
+                    </div>
+                  ))}
                 </div>
 
-                <div className="text-center md:text-left">
-                  <div className="text-xs font-medium text-slate-700 mb-3">
-                    Backed by Prominent Investors
-                  </div>
-                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 1"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.35s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 2"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.40s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 3"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.45s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 4"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.50s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 5"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.55s forwards" }}
-                    />
-                    <img
-                      src="/placeholder.svg"
-                      alt="Badge 6"
-                      className="mx-auto h-8 w-auto opacity-0"
-                      style={{ animation: "fadeUp 500ms ease 0.60s forwards" }}
-                    />
-                  </div>
+                <div className="mt-6 text-xs font-medium text-slate-700 mb-4">Certifications & Badges</div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 items-center">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="flex items-center justify-center h-12 rounded-md bg-white/80 border border-slate-100 hover:shadow-md transition">
+                      <img src="/placeholder.svg" alt={`Badge ${i + 1}`} className="h-6 w-auto grayscale opacity-90 hover:grayscale-0 transition" />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
