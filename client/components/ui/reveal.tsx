@@ -8,11 +8,14 @@ export type RevealProps = PropsWithChildren<{
   duration?: number; // ms
   as?: keyof JSX.IntrinsicElements;
   /**
-   * scale: subtle scale + fade + rise
+   * scale: subtle scale + fade + directional movement
    * fadeUp: fade + rise
+   * fadeDown: fade + drop
+   * fadeLeft: fade + slide from left
+   * fadeRight: fade + slide from right
    * fade: fade only
    */
-  variant?: "scale" | "fadeUp" | "fade";
+  variant?: "scale" | "fadeUp" | "fadeDown" | "fadeLeft" | "fadeRight" | "fade";
   /** If true, element will animate again when it leaves and re-enters */
   repeat?: boolean;
 }>;
@@ -27,14 +30,24 @@ export function Reveal({
   repeat = false,
   ...rest
 }: RevealProps & Record<string, any>) {
-  const { ref, inView } = useInView<HTMLDivElement>({ once: !repeat, rootMargin: "0px 0px -10% 0px", threshold: 0.15 });
+  const { ref, inView } = useInView<HTMLDivElement>({
+    once: !repeat,
+    rootMargin: "0px 0px -10% 0px",
+    threshold: 0.15,
+  });
 
   const Comp = as as any;
 
   const baseHidden = useMemo(() => {
     switch (variant) {
       case "fadeUp":
-        return "opacity-0 translate-y-4";
+        return "opacity-0 translate-y-8";
+      case "fadeDown":
+        return "opacity-0 -translate-y-4";
+      case "fadeLeft":
+        return "opacity-0 -translate-x-16";
+      case "fadeRight":
+        return "opacity-0 translate-x-16";
       case "fade":
         return "opacity-0";
       case "scale":
@@ -47,6 +60,11 @@ export function Reveal({
     switch (variant) {
       case "fadeUp":
         return "opacity-100 translate-y-0";
+      case "fadeDown":
+        return "opacity-100 translate-y-0";
+      case "fadeLeft":
+      case "fadeRight":
+        return "opacity-100 translate-x-0";
       case "fade":
         return "opacity-100";
       case "scale":
@@ -63,7 +81,7 @@ export function Reveal({
         // Respect reduced motion via utilities as well
         "motion-reduce:opacity-100 motion-reduce:translate-y-0 motion-reduce:scale-100",
         inView ? baseVisible : baseHidden,
-        className
+        className,
       )}
       style={{
         transitionDuration: `${duration}ms`,
