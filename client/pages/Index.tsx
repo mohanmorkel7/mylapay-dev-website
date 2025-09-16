@@ -398,7 +398,9 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Reliable</div>
-                    <div className="text-sm text-muted-foreground">99.99% uptime and resiliency</div>
+                    <div className="text-sm text-muted-foreground">
+                      99.99% uptime and resiliency
+                    </div>
                   </div>
                 </div>
               </div>
