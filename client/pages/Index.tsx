@@ -1,4 +1,19 @@
 import { Button } from "@/components/ui/button";
+import Reveal from "@/components/ui/reveal";
+import ScrollScale from "@/components/ui/scroll-scale";
+import {
+  ShieldCheck,
+  Gauge,
+  Layers,
+  KeyRound,
+  Server,
+  ShieldAlert,
+  Database,
+  RotateCcw,
+  BarChart3,
+  GitBranch,
+  Activity,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
@@ -226,27 +241,43 @@ export default function Index() {
         </div>
 
         <div className="w-full max-w-5xl pl-6 md:pl-12 lg:pl-20">
-          <h1
+          <Reveal
+            as="h1"
             id="hero-heading"
+            variant="scale"
+            duration={800}
+            delay={0}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
           >
             Powering the
             <br />
             Future of Payments
-          </h1>
+          </Reveal>
 
-          <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
+          <Reveal
+            as="p"
+            variant="scale"
+            duration={800}
+            delay={100}
+            className="mt-6 max-w-2xl text-lg md:text-xl text-white/85"
+          >
             Fast, secure payment infrastructure for modern businesses.
-          </p>
+          </Reveal>
 
-          <div className="mt-8 flex items-center gap-4">
+          <Reveal
+            as="div"
+            variant="scale"
+            duration={800}
+            delay={200}
+            className="mt-8 flex items-center gap-4"
+          >
             <a
               href="#"
               className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:shadow-lg transition"
             >
               Integrate with us
             </a>
-          </div>
+          </Reveal>
         </div>
 
         {/* Play overlay if autoplay blocked */}
@@ -267,49 +298,65 @@ export default function Index() {
       </section>
 
       {/* Content sections for anchors */}
-      <section id="about" className="bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto py-24 md:py-32">
+      <section
+        id="about"
+        className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-24 md:py-32"
+          direction="left"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="pl-6 md:pl-20">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
+              <Reveal
+                as="h2"
+                variant="scale"
+                delay={0}
+                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight"
+              >
                 The Next-Gen
                 <br />
                 Payment Company
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
+              </Reveal>
+              <Reveal
+                as="p"
+                variant="scale"
+                delay={100}
+                className="mt-4 text-lg text-muted-foreground max-w-xl text-left"
+              >
                 A Smart payment infrastructure
-              </p>
+                <br />
+                Built to scale globally with bank-grade security, speed, and
+                reliability.
+              </Reveal>
 
-              <div className="mt-6 flex items-start gap-3">
+              <Reveal
+                as="div"
+                variant="scale"
+                delay={200}
+                className="mt-6 flex items-start gap-3"
+              >
                 <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">
                   Designed in India
                 </span>
                 <span className="inline-block bg-slate-800 text-white px-3 py-1 rounded-md text-sm">
                   Delivered Globally
                 </span>
-              </div>
+              </Reveal>
             </div>
 
             <div className="flex flex-col items-start justify-center gap-6 pl-6 md:pl-28">
               <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M3 7v10a2 2 0 0 0 2 2h14"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M7 7a5 5 0 0 1 10 0"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <ShieldCheck className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Secure</div>
@@ -321,22 +368,7 @@ export default function Index() {
 
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-500 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M12 3v18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M3 12h18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <Gauge className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Speed</div>
@@ -348,15 +380,7 @@ export default function Index() {
 
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-400 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M3 12h6l3-9 3 18 3-9h6"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <Layers className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Scalable</div>
@@ -368,15 +392,25 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
       {/* Global map section */}
       <section
         id="global-map"
-        className="relative bg-background py-6 md:py-8 overflow-hidden"
+        className="relative bg-background py-6 md:py-8 overflow-hidden scroll-mt-20 md:scroll-mt-24"
       >
-        <div className="container relative mx-auto">
+        <ScrollScale
+          as="div"
+          className="container relative mx-auto"
+          direction="right"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <div className="mx-auto max-w-6xl">
             <div className="relative">
               <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
@@ -403,7 +437,12 @@ export default function Index() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
-                  <h2 className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                  <Reveal
+                    as="h2"
+                    variant="scale"
+                    delay={0}
+                    className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight"
+                  >
                     A Unified Global
                     <br />
                     Payment Processing Solution
@@ -411,11 +450,16 @@ export default function Index() {
                     for Acquirers - Banks and
                     <br />
                     Payment Aggregators
-                  </h2>
+                  </Reveal>
 
-                  <p className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold">
+                  <Reveal
+                    as="p"
+                    variant="scale"
+                    delay={150}
+                    className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold"
+                  >
                     Supports POS and E-com payments for
-                  </p>
+                  </Reveal>
 
                   <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 sm:gap-12">
                     <div className="flex items-center gap-3 text-sm sm:text-base md:text-lg text-slate-900">
@@ -547,11 +591,24 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
-      <section id="carousel" className="bg-background">
-        <div className="container mx-auto py-12 md:py-16">
+      <section
+        id="carousel"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+          startViewportRatio={1}
+          endViewportRatio={0.1}
+        >
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               <div
@@ -767,22 +824,44 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
-      <section id="scale" className="bg-background">
-        <div className="container mx-auto py-8 md:py-12 text-center">
+      <section
+        id="scale"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-8 md:py-12 text-center"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Built for Scale, Engineered for
           </h2>
           <h3 className="mt-2 text-2xl md:text-3xl lg:text-4xl font-semibold">
             Security & Designed for Profitability
           </h3>
-        </div>
+        </ScrollScale>
       </section>
 
-      <section id="features" className="bg-background">
-        <div className="w-full border-t border-b border-slate-300">
+      <section
+        id="features"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="w-full border-t border-b border-slate-300"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
@@ -907,11 +986,24 @@ export default function Index() {
               </div>
             </li>
           </ul>
-        </div>
+        </ScrollScale>
       </section>
 
-      <section id="products" className="bg-[#202c5c]">
-        <div className="container mx-auto py-12 md:py-16">
+      <section
+        id="products"
+        className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="right"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
           </h2>
@@ -959,33 +1051,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M3 11h18"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M6 11v6h3v-4h6v4h3v-6"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M12 3v4"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
+                  <KeyRound className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">Mylapay TokenX</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1037,26 +1103,10 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
+                  <ShieldCheck
                     className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
                     aria-hidden
-                  >
-                    <path
-                      d="M12 3v18"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M3 12h18"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
+                  />
 
                   <h3 className="text-lg font-semibold">Mylapay Secure</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1108,26 +1158,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M4 7h16v10H4z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      fill="none"
-                    />
-                    <path
-                      d="M8 11h8"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
+                  <Server className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">Mylapay C-Switch</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1179,21 +1210,10 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
+                  <ShieldAlert
                     className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
                     aria-hidden
-                  >
-                    <path
-                      d="M12 2v4M12 18v4M4 12h4M16 12h4"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  />
 
                   <h3 className="text-lg font-semibold">IntelleWatch</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1531,11 +1551,19 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
       <section id="counters" className="bg-white">
-        <div className="container mx-auto py-6 md:py-10">
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-6 md:py-10"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center divide-x divide-slate-200">
               <div className="px-6 py-4">
@@ -1571,11 +1599,19 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
       <section id="clients" className="bg-white">
-        <div className="container mx-auto py-10">
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-10"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">
             Trusted By The Top Payment Aggregator & Gateways
           </h3>
@@ -1626,11 +1662,21 @@ export default function Index() {
               />
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
       <section id="testimonials" className="bg-white">
-        <div className="container mx-auto py-12 md:py-16">
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+          startViewportRatio={1}
+          endViewportRatio={0.1}
+        >
           <div className="flex justify-center">
             <div className="relative w-full max-w-5xl">
               {/* decorative shadow under the carousel */}
@@ -1703,11 +1749,19 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
       </section>
 
       <section id="who" className="bg-white">
-        <div className="container mx-auto py-12 md:py-16">
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div className="pr-4">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
@@ -1780,7 +1834,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollScale>
 
         <style>{`@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}`}</style>
       </section>
