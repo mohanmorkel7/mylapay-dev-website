@@ -557,7 +557,7 @@ export default function Index() {
       </section>
 
       <section id="carousel" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1} startViewportRatio={1} endViewportRatio={0.1}>
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               <div
