@@ -382,7 +382,7 @@ export default function Index() {
         id="global-map"
         className="relative bg-background py-6 md:py-8 overflow-hidden scroll-mt-20 md:scroll-mt-24"
       >
-        <ScrollScale as="div" className="container relative mx-auto" direction="right" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale as="div" className="container relative mx-auto" direction="right" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
           <div className="mx-auto max-w-6xl">
             <div className="relative">
               <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
