@@ -248,7 +248,7 @@ export default function Index() {
           <Reveal
             as="h1"
             id="hero-heading"
-            variant="scale"
+            variant="fadeUp"
             duration={800}
             delay={0}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.55)]"
@@ -260,7 +260,7 @@ export default function Index() {
 
           <Reveal
             as="p"
-            variant="scale"
+            variant="fadeUp"
             duration={800}
             delay={100}
             className="mt-6 max-w-2xl text-lg md:text-xl text-white/85"
@@ -270,7 +270,7 @@ export default function Index() {
 
           <Reveal
             as="div"
-            variant="scale"
+            variant="fadeUp"
             duration={800}
             delay={200}
             className="mt-8 flex items-center gap-4"
@@ -321,7 +321,7 @@ export default function Index() {
             <div className="pl-0 md:pl-6">
               <Reveal
                 as="h2"
-                variant="scale"
+                variant="fadeLeft"
                 delay={0}
                 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight"
               >
@@ -329,7 +329,7 @@ export default function Index() {
               </Reveal>
               <Reveal
                 as="p"
-                variant="scale"
+                variant="fadeLeft"
                 delay={100}
                 className="mt-4 text-lg text-muted-foreground max-w-2xl text-left"
               >
@@ -341,7 +341,7 @@ export default function Index() {
 
               <Reveal
                 as="div"
-                variant="scale"
+                variant="fadeLeft"
                 delay={200}
                 className="mt-6 flex items-start gap-3"
               >
@@ -453,7 +453,7 @@ export default function Index() {
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
                   <Reveal
                     as="h2"
-                    variant="scale"
+                    variant="fadeRight"
                     delay={0}
                     className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight"
                   >
@@ -468,7 +468,7 @@ export default function Index() {
 
                   <Reveal
                     as="p"
-                    variant="scale"
+                    variant="fadeRight"
                     delay={150}
                     className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold"
                   >
