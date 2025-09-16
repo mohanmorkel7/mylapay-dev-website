@@ -37,13 +37,13 @@ export function Reveal({
   const baseHidden = useMemo(() => {
     switch (variant) {
       case "fadeUp":
-        return "opacity-0 translate-y-4";
+        return "opacity-0 translate-y-8";
       case "fadeDown":
         return "opacity-0 -translate-y-4";
       case "fadeLeft":
-        return "opacity-0 -translate-x-6";
+        return "opacity-0 -translate-x-16";
       case "fadeRight":
-        return "opacity-0 translate-x-6";
+        return "opacity-0 translate-x-16";
       case "fade":
         return "opacity-0";
       case "scale":
