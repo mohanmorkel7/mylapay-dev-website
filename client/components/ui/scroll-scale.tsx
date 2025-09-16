@@ -13,6 +13,11 @@ export type ScrollScaleProps = PropsWithChildren<{
   toScale?: number;   // final scale
   fromOpacity?: number;
   toOpacity?: number;
+  /** Horizontal translation from -> to (in px). If provided, overrides 'direction'. */
+  fromX?: number;
+  toX?: number;
+  /** Slide-in direction helper. If set, defaults to fromX=-64 for 'left' and fromX=64 for 'right'. */
+  direction?: "left" | "right";
   /** When true, element is visually hidden (opacity 0, pointer-events none) until it starts entering */
   hideUntilInView?: boolean;
   /** Start/end ratios describing when the animation should begin/end as element top moves in viewport */
@@ -29,6 +34,9 @@ export default function ScrollScale({
   toScale = 1,
   fromOpacity = 0.4,
   toOpacity = 1,
+  fromX,
+  toX,
+  direction,
   hideUntilInView = true,
   startViewportRatio = 0.9,
   endViewportRatio = 0.3,
@@ -42,6 +50,12 @@ export default function ScrollScale({
   const scale = fromScale + (toScale - fromScale) * eased;
   const opacity = fromOpacity + (toOpacity - fromOpacity) * eased;
 
+  // Determine horizontal translation
+  const defaults = direction === "left" ? { fx: -64, tx: 0 } : direction === "right" ? { fx: 64, tx: 0 } : { fx: 0, tx: 0 };
+  const fx = fromX ?? defaults.fx;
+  const tx = toX ?? defaults.tx;
+  const translateX = fx + (tx - fx) * eased;
+
   const hidden = hideUntilInView && progress <= 0;
 
   return (
@@ -53,7 +67,7 @@ export default function ScrollScale({
         className
       )}
       style={{
-        transform: `scale(${scale})`,
+        transform: `translate3d(${translateX}px, 0, 0) scale(${scale})`,
         opacity: opacity,
         transformOrigin,
       }}
