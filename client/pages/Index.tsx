@@ -1265,20 +1265,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M3 7h18v10H3z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      fill="none"
-                    />
-                  </svg>
+                  <Database className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">IntelleSettle</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1330,20 +1317,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M4 7h16v10H4z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      fill="none"
-                    />
-                  </svg>
+                  <RotateCcw className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">IntelleSolve</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1395,20 +1369,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M3 7h18v10H3z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      fill="none"
-                    />
-                  </svg>
+                  <BarChart3 className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">Intelle360</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1460,20 +1421,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M12 2l4 4-4 4-4-4 4-4z"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                      fill="none"
-                    />
-                  </svg>
+                  <GitBranch className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">Mylapay U-Switch</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1525,20 +1473,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M12 2l4 4 4 4-4 4-4 4-4-4-4-4 4-4 4-4z"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                      fill="none"
-                    />
-                  </svg>
+                  <Activity className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">IntellePro</h3>
                   <p className="mt-1 text-sm text-white/90">
