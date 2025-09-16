@@ -274,7 +274,7 @@ export default function Index() {
 
       {/* Content sections for anchors */}
       <section id="about" className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-24 md:py-32" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-24 md:py-32" direction="left" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="pl-6 md:pl-20">
               <Reveal as="h2" variant="scale" delay={0} className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
