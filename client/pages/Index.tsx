@@ -303,22 +303,7 @@ export default function Index() {
               <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M3 7v10a2 2 0 0 0 2 2h14"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M7 7a5 5 0 0 1 10 0"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <ShieldCheck className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Secure</div>
