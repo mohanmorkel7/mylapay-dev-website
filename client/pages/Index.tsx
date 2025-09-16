@@ -917,7 +917,7 @@ export default function Index() {
       </section>
 
       <section id="products" className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="right" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="right" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
           </h2>
