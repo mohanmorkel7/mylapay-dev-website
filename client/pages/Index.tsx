@@ -655,7 +655,10 @@ export default function Index() {
                                 ) : s.key === "card" ? (
                                   <CreditCard className="h-5 w-5" aria-hidden />
                                 ) : s.key === "upi" ? (
-                                  <IndianRupee className="h-5 w-5" aria-hidden />
+                                  <IndianRupee
+                                    className="h-5 w-5"
+                                    aria-hidden
+                                  />
                                 ) : (
                                   <Network className="h-5 w-5" aria-hidden />
                                 )}
