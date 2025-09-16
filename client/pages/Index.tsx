@@ -1636,7 +1636,7 @@ export default function Index() {
       </section>
 
       <section id="testimonials" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1} startViewportRatio={1} endViewportRatio={0.1}>
           <div className="flex justify-center">
             <div className="relative w-full max-w-5xl">
               {/* decorative shadow under the carousel */}
