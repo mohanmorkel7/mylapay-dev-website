@@ -284,6 +284,8 @@ export default function Index() {
               </Reveal>
               <Reveal as="p" variant="scale" delay={100} className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
                 A Smart payment infrastructure
+                <br />
+                Built to scale globally with bank-grade security, speed, and reliability.
               </Reveal>
 
               <Reveal as="div" variant="scale" delay={200} className="mt-6 flex items-start gap-3">
