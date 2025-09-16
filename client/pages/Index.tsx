@@ -1086,21 +1086,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M12 2v4M12 18v4M4 12h4M16 12h4"
-                      stroke="currentColor"
-                      strokeWidth="1.4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <ShieldAlert className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">IntelleWatch</h3>
                   <p className="mt-1 text-sm text-white/90">
