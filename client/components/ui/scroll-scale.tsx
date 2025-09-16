@@ -16,6 +16,9 @@ export type ScrollScaleProps = PropsWithChildren<{
   /** Horizontal translation from -> to (in px). If provided, overrides 'direction'. */
   fromX?: number;
   toX?: number;
+  /** Vertical translation from -> to (in px). */
+  fromY?: number;
+  toY?: number;
   /** Slide-in direction helper. If set, defaults to fromX=-64 for 'left' and fromX=64 for 'right'. */
   direction?: "left" | "right";
   /** When true, element is visually hidden (opacity 0, pointer-events none) until it starts entering */
@@ -41,6 +44,8 @@ export default function ScrollScale({
   startViewportRatio = 0.9,
   endViewportRatio = 0.3,
   transformOrigin = "center",
+  fromY = 0,
+  toY = 0,
   ...rest
 }: ScrollScaleProps & Record<string, any>) {
   const { ref, progress } = useScrollProgress<HTMLDivElement>({
@@ -63,6 +68,7 @@ export default function ScrollScale({
   const fx = fromX ?? defaults.fx;
   const tx = toX ?? defaults.tx;
   const translateX = fx + (tx - fx) * eased;
+  const translateY = fromY + (toY - fromY) * eased;
 
   const hidden = hideUntilInView && progress <= 0;
 
@@ -75,7 +81,7 @@ export default function ScrollScale({
         className,
       )}
       style={{
-        transform: `translate3d(${translateX}px, 0, 0) scale(${scale})`,
+        transform: `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale})`,
         opacity: opacity,
         transformOrigin,
       }}
