@@ -10,7 +10,7 @@ export type ScrollScaleProps = PropsWithChildren<{
   as?: keyof JSX.IntrinsicElements;
   className?: string;
   fromScale?: number; // initial scale
-  toScale?: number;   // final scale
+  toScale?: number; // final scale
   fromOpacity?: number;
   toOpacity?: number;
   /** Horizontal translation from -> to (in px). If provided, overrides 'direction'. */
@@ -43,7 +43,10 @@ export default function ScrollScale({
   transformOrigin = "center",
   ...rest
 }: ScrollScaleProps & Record<string, any>) {
-  const { ref, progress } = useScrollProgress<HTMLDivElement>({ startViewportRatio, endViewportRatio });
+  const { ref, progress } = useScrollProgress<HTMLDivElement>({
+    startViewportRatio,
+    endViewportRatio,
+  });
   const Comp = as as any;
 
   const eased = useMemo(() => easeOutCubic(progress), [progress]);
@@ -51,7 +54,12 @@ export default function ScrollScale({
   const opacity = fromOpacity + (toOpacity - fromOpacity) * eased;
 
   // Determine horizontal translation
-  const defaults = direction === "left" ? { fx: -64, tx: 0 } : direction === "right" ? { fx: 64, tx: 0 } : { fx: 0, tx: 0 };
+  const defaults =
+    direction === "left"
+      ? { fx: -64, tx: 0 }
+      : direction === "right"
+        ? { fx: 64, tx: 0 }
+        : { fx: 0, tx: 0 };
   const fx = fromX ?? defaults.fx;
   const tx = toX ?? defaults.tx;
   const translateX = fx + (tx - fx) * eased;
@@ -64,7 +72,7 @@ export default function ScrollScale({
       className={cn(
         "transform-gpu will-change-transform will-change-opacity",
         hidden ? "pointer-events-none" : undefined,
-        className
+        className,
       )}
       style={{
         transform: `translate3d(${translateX}px, 0, 0) scale(${scale})`,

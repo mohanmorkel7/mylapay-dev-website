@@ -1,7 +1,19 @@
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/ui/reveal";
 import ScrollScale from "@/components/ui/scroll-scale";
-import { ShieldCheck, Gauge, Layers, KeyRound, Server, ShieldAlert, Database, RotateCcw, BarChart3, GitBranch, Activity } from "lucide-react";
+import {
+  ShieldCheck,
+  Gauge,
+  Layers,
+  KeyRound,
+  Server,
+  ShieldAlert,
+  Database,
+  RotateCcw,
+  BarChart3,
+  GitBranch,
+  Activity,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
@@ -242,11 +254,23 @@ export default function Index() {
             Future of Payments
           </Reveal>
 
-          <Reveal as="p" variant="scale" duration={800} delay={100} className="mt-6 max-w-2xl text-lg md:text-xl text-white/85">
+          <Reveal
+            as="p"
+            variant="scale"
+            duration={800}
+            delay={100}
+            className="mt-6 max-w-2xl text-lg md:text-xl text-white/85"
+          >
             Fast, secure payment infrastructure for modern businesses.
           </Reveal>
 
-          <Reveal as="div" variant="scale" duration={800} delay={200} className="mt-8 flex items-center gap-4">
+          <Reveal
+            as="div"
+            variant="scale"
+            duration={800}
+            delay={200}
+            className="mt-8 flex items-center gap-4"
+          >
             <a
               href="#"
               className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:shadow-lg transition"
@@ -274,22 +298,51 @@ export default function Index() {
       </section>
 
       {/* Content sections for anchors */}
-      <section id="about" className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-24 md:py-32" direction="left" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
+      <section
+        id="about"
+        className="bg-background/70 backdrop-blur-sm scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-24 md:py-32"
+          direction="left"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="pl-6 md:pl-20">
-              <Reveal as="h2" variant="scale" delay={0} className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
+              <Reveal
+                as="h2"
+                variant="scale"
+                delay={0}
+                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight"
+              >
                 The Next-Gen
                 <br />
                 Payment Company
               </Reveal>
-              <Reveal as="p" variant="scale" delay={100} className="mt-4 text-lg text-muted-foreground max-w-xl text-left">
+              <Reveal
+                as="p"
+                variant="scale"
+                delay={100}
+                className="mt-4 text-lg text-muted-foreground max-w-xl text-left"
+              >
                 A Smart payment infrastructure
                 <br />
-                Built to scale globally with bank-grade security, speed, and reliability.
+                Built to scale globally with bank-grade security, speed, and
+                reliability.
               </Reveal>
 
-              <Reveal as="div" variant="scale" delay={200} className="mt-6 flex items-start gap-3">
+              <Reveal
+                as="div"
+                variant="scale"
+                delay={200}
+                className="mt-6 flex items-start gap-3"
+              >
                 <span className="inline-block bg-sky-500 text-white px-3 py-1 rounded-md text-sm">
                   Designed in India
                 </span>
@@ -347,7 +400,17 @@ export default function Index() {
         id="global-map"
         className="relative bg-background py-6 md:py-8 overflow-hidden scroll-mt-20 md:scroll-mt-24"
       >
-        <ScrollScale as="div" className="container relative mx-auto" direction="right" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
+        <ScrollScale
+          as="div"
+          className="container relative mx-auto"
+          direction="right"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <div className="mx-auto max-w-6xl">
             <div className="relative">
               <div className="relative w-full h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
@@ -374,7 +437,12 @@ export default function Index() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-4">
-                  <Reveal as="h2" variant="scale" delay={0} className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight">
+                  <Reveal
+                    as="h2"
+                    variant="scale"
+                    delay={0}
+                    className="max-w-3xl text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 dark:text-white drop-shadow-sm leading-tight"
+                  >
                     A Unified Global
                     <br />
                     Payment Processing Solution
@@ -384,7 +452,12 @@ export default function Index() {
                     Payment Aggregators
                   </Reveal>
 
-                  <Reveal as="p" variant="scale" delay={150} className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold">
+                  <Reveal
+                    as="p"
+                    variant="scale"
+                    delay={150}
+                    className="mt-16 md:mt-20 text-center text-sm md:text-base text-slate-900 dark:text-white font-semibold"
+                  >
                     Supports POS and E-com payments for
                   </Reveal>
 
@@ -521,8 +594,21 @@ export default function Index() {
         </ScrollScale>
       </section>
 
-      <section id="carousel" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1} startViewportRatio={1} endViewportRatio={0.1}>
+      <section
+        id="carousel"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+          startViewportRatio={1}
+          endViewportRatio={0.1}
+        >
           <div className="max-w-6xl mx-auto">
             <div className="relative">
               <div
@@ -741,8 +827,19 @@ export default function Index() {
         </ScrollScale>
       </section>
 
-      <section id="scale" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-8 md:py-12 text-center" direction="right" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+      <section
+        id="scale"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-8 md:py-12 text-center"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
             Built for Scale, Engineered for
           </h2>
@@ -752,8 +849,19 @@ export default function Index() {
         </ScrollScale>
       </section>
 
-      <section id="features" className="bg-background scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="w-full border-t border-b border-slate-300" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+      <section
+        id="features"
+        className="bg-background scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="w-full border-t border-b border-slate-300"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
@@ -881,8 +989,21 @@ export default function Index() {
         </ScrollScale>
       </section>
 
-      <section id="products" className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="right" fromScale={0.55} toScale={1} fromOpacity={0.08} toOpacity={1} startViewportRatio={1.2} endViewportRatio={0}>
+      <section
+        id="products"
+        className="bg-[#202c5c] scroll-mt-20 md:scroll-mt-24"
+      >
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="right"
+          fromScale={0.55}
+          toScale={1}
+          fromOpacity={0.08}
+          toOpacity={1}
+          startViewportRatio={1.2}
+          endViewportRatio={0}
+        >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white mb-8">
             Mylapay Product Suites
           </h2>
@@ -982,7 +1103,10 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <ShieldCheck className="h-8 w-8 text-white mb-3" aria-hidden />
+                  <ShieldCheck
+                    className="h-8 w-8 text-white mb-3"
+                    aria-hidden
+                  />
 
                   <h3 className="text-lg font-semibold">Mylapay Secure</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1086,7 +1210,10 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <ShieldAlert className="h-8 w-8 text-white mb-3" aria-hidden />
+                  <ShieldAlert
+                    className="h-8 w-8 text-white mb-3"
+                    aria-hidden
+                  />
 
                   <h3 className="text-lg font-semibold">IntelleWatch</h3>
                   <p className="mt-1 text-sm text-white/90">
@@ -1428,7 +1555,15 @@ export default function Index() {
       </section>
 
       <section id="counters" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-6 md:py-10" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-6 md:py-10"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center divide-x divide-slate-200">
               <div className="px-6 py-4">
@@ -1468,7 +1603,15 @@ export default function Index() {
       </section>
 
       <section id="clients" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-10" direction="right" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-10"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <h3 className="text-center text-sm font-semibold text-slate-700 mb-6">
             Trusted By The Top Payment Aggregator & Gateways
           </h3>
@@ -1523,7 +1666,17 @@ export default function Index() {
       </section>
 
       <section id="testimonials" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="left" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1} startViewportRatio={1} endViewportRatio={0.1}>
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="left"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+          startViewportRatio={1}
+          endViewportRatio={0.1}
+        >
           <div className="flex justify-center">
             <div className="relative w-full max-w-5xl">
               {/* decorative shadow under the carousel */}
@@ -1600,7 +1753,15 @@ export default function Index() {
       </section>
 
       <section id="who" className="bg-white">
-        <ScrollScale as="div" className="container mx-auto py-12 md:py-16" direction="right" fromScale={0.7} toScale={1} fromOpacity={0.12} toOpacity={1}>
+        <ScrollScale
+          as="div"
+          className="container mx-auto py-12 md:py-16"
+          direction="right"
+          fromScale={0.7}
+          toScale={1}
+          fromOpacity={0.12}
+          toOpacity={1}
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <div className="pr-4">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
