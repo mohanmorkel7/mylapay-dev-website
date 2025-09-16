@@ -273,7 +273,7 @@ export default function Index() {
           >
             <a
               href="#"
-              className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:shadow-lg transition"
+              className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-md hover:bg-[#2caee4] hover:text-white hover:shadow-lg transition-colors duration-200"
             >
               Integrate with us
             </a>
@@ -629,11 +629,15 @@ export default function Index() {
                       className="flex-shrink-0 px-4 sm:px-6 md:px-8"
                       style={{ width: `${100 / slides.length}%` }}
                     >
-                      <div className="rounded-xl bg-white p-6 md:p-8 shadow-xl hover:shadow-2xl transition-shadow flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px] overflow-hidden">
+                      <div className="rounded-xl bg-white p-6 md:p-8 border-b border-slate-200 shadow-[0_8px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_14px_20px_rgba(0,0,0,0.12)] transition-shadow flex flex-col md:flex-row gap-6 items-stretch md:min-h-[220px] overflow-hidden">
                         <div className="md:w-56 md:h-auto flex-shrink-0">
                           <img
                             src={s.image}
                             alt={s.title}
+                            onError={(e) => {
+                              e.currentTarget.src = "/placeholder.svg";
+                              e.currentTarget.onerror = null;
+                            }}
                             className="w-full h-56 md:h-full object-cover rounded-lg border border-slate-300"
                           />
                         </div>
@@ -865,19 +869,7 @@ export default function Index() {
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto py-12 md:py-16">
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden
-                >
-                  <path
-                    d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <Gauge className="h-5 w-5" aria-hidden />
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-slate-900">
@@ -891,29 +883,7 @@ export default function Index() {
 
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden
-                >
-                  <path
-                    d="M12 2l7 4v6c0 5-3.5 9.7-7 10-3.5-0.3-7-5-7-10V6l7-4z"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    fill="none"
-                  />
-                  <path
-                    d="M9 12l2 2 4-4"
-                    stroke="currentColor"
-                    strokeWidth="1.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                  />
-                </svg>
+                <ShieldCheck className="h-5 w-5" aria-hidden />
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-slate-900">
@@ -929,20 +899,7 @@ export default function Index() {
 
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden
-                >
-                  <path d="M3 17h18v3H3z" fill="currentColor" />
-                  <path
-                    d="M7 13V7h2v6H7zM11 13V4h2v9h-2zM15 13v-3h2v3h-2z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <BarChart3 className="h-5 w-5" aria-hidden />
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-slate-900">
@@ -956,23 +913,7 @@ export default function Index() {
 
             <li className="flex flex-col items-start text-left gap-4 p-6 md:p-8 border-b md:border-b-0 md:border-r-0 border-slate-300">
               <div className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#e6f7fb] text-[#2caee4]">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden
-                >
-                  <path
-                    d="M12 2v4M12 18v4M4 12h4M16 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"
-                    stroke="currentColor"
-                    strokeWidth="1.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                  />
-                </svg>
+                <Layers className="h-5 w-5" aria-hidden />
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-slate-900">
