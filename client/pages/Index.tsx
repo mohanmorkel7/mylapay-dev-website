@@ -309,7 +309,8 @@ export default function Index() {
         <ScrollScale
           as="div"
           className="container mx-auto py-24 md:py-32"
-          direction="left"
+          fromX={-160}
+          toX={0}
           fromScale={0.55}
           toScale={1}
           fromOpacity={0.08}
@@ -417,7 +418,8 @@ export default function Index() {
         <ScrollScale
           as="div"
           className="container relative mx-auto"
-          direction="right"
+          fromX={160}
+          toX={0}
           fromScale={0.55}
           toScale={1}
           fromOpacity={0.08}
@@ -615,7 +617,8 @@ export default function Index() {
         <ScrollScale
           as="div"
           className="container mx-auto py-12 md:py-16"
-          direction="left"
+          fromY={80}
+          toY={0}
           fromScale={0.7}
           toScale={1}
           fromOpacity={0.12}
@@ -1454,7 +1457,8 @@ export default function Index() {
         <ScrollScale
           as="div"
           className="container mx-auto py-12 md:py-16"
-          direction="left"
+          fromX={160}
+          toX={0}
           fromScale={0.7}
           toScale={1}
           fromOpacity={0.12}
