@@ -1034,26 +1034,7 @@ export default function Index() {
                   </svg>
                 </a>
                 <div className="flex flex-col items-start relative z-10">
-                  <svg
-                    className="h-8 w-8 text-white mb-3"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M4 7h16v10H4z"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      fill="none"
-                    />
-                    <path
-                      d="M8 11h8"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
+                  <Server className="h-8 w-8 text-white mb-3" aria-hidden />
 
                   <h3 className="text-lg font-semibold">Mylapay C-Switch</h3>
                   <p className="mt-1 text-sm text-white/90">
