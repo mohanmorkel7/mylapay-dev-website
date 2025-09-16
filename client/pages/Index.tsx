@@ -315,22 +315,7 @@ export default function Index() {
 
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-500 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M12 3v18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M3 12h18"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <Gauge className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Speed</div>
