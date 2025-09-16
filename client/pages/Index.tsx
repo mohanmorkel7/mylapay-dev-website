@@ -318,22 +318,20 @@ export default function Index() {
           endViewportRatio={0}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="pl-6 md:pl-20">
+            <div className="pl-0 md:pl-6">
               <Reveal
                 as="h2"
                 variant="scale"
                 delay={0}
                 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight"
               >
-                The Next-Gen
-                <br />
-                Payment Company
+                Next-Generation Payment Infrastructure
               </Reveal>
               <Reveal
                 as="p"
                 variant="scale"
                 delay={100}
-                className="mt-4 text-lg text-muted-foreground max-w-xl text-left"
+                className="mt-4 text-lg text-muted-foreground max-w-2xl text-left"
               >
                 A Smart payment infrastructure
                 <br />
@@ -356,8 +354,8 @@ export default function Index() {
               </Reveal>
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-6 pl-6 md:pl-28">
-              <div className="grid grid-cols-1 gap-4 w-full max-w-sm">
+            <div className="flex flex-col items-start justify-center gap-6 pl-0 md:pl-6 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-600 text-white">
                     <ShieldCheck className="h-5 w-5" />
@@ -391,6 +389,16 @@ export default function Index() {
                     <div className="text-sm text-muted-foreground">
                       Grow without limits
                     </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60 w-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-300 text-white">
+                    <Server className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900">Reliable</div>
+                    <div className="text-sm text-muted-foreground">99.99% uptime and resiliency</div>
                   </div>
                 </div>
               </div>
@@ -1555,7 +1563,7 @@ export default function Index() {
                 <div className="font-semibold">2019</div>
 
                 <div className="ml-6 text-sm text-slate-600">Headquarters</div>
-                <div className="font-semibold">Bengaluru</div>
+                <div className="font-semibold">Chennai</div>
               </div>
 
               <div className="mt-6">
