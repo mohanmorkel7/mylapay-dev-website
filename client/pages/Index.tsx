@@ -327,15 +327,7 @@ export default function Index() {
 
                 <div className="flex items-center gap-4 p-4 rounded-lg border bg-white/60">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-400 text-white">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M3 12h6l3-9 3 18 3-9h6"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <Layers className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-slate-900">Scalable</div>
