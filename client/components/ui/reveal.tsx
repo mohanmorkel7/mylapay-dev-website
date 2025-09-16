@@ -30,7 +30,11 @@ export function Reveal({
   repeat = false,
   ...rest
 }: RevealProps & Record<string, any>) {
-  const { ref, inView } = useInView<HTMLDivElement>({ once: !repeat, rootMargin: "0px 0px -10% 0px", threshold: 0.15 });
+  const { ref, inView } = useInView<HTMLDivElement>({
+    once: !repeat,
+    rootMargin: "0px 0px -10% 0px",
+    threshold: 0.15,
+  });
 
   const Comp = as as any;
 
@@ -77,7 +81,7 @@ export function Reveal({
         // Respect reduced motion via utilities as well
         "motion-reduce:opacity-100 motion-reduce:translate-y-0 motion-reduce:scale-100",
         inView ? baseVisible : baseHidden,
-        className
+        className,
       )}
       style={{
         transitionDuration: `${duration}ms`,
