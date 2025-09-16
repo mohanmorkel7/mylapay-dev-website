@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Reveal from "@/components/ui/reveal";
 import ScrollScale from "@/components/ui/scroll-scale";
+import { ShieldCheck, Gauge, Layers, KeyRound, Server, ShieldAlert, Database, RotateCcw, BarChart3, GitBranch, Activity } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 export default function Index() {
